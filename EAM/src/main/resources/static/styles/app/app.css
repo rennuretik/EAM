@@ -1,0 +1,1192 @@
+body {
+  background: #edf0f5;
+  color: #81848b;
+}
+.crm-clearfloat {
+  clear: both;
+}
+.width100 {
+  width: 100%;
+}
+#crm-index-modalBtn {
+  position: absolute;
+  z-index: -99;
+  display: none;
+}
+.display-IB {
+  display: inline-block;
+}
+/**
+  * CRM公用组件样式
+  */
+.crm-form-input {
+  display: inline-block;
+  position: relative;
+  line-height: 30px\9;
+}
+.crm-form-input label.crm-label {
+  padding: 5px 16px;
+  margin-bottom: 0;
+  display: inline\9;
+}
+.crm-form-input input.crm-input {
+  height: 30px;
+  border: 1px solid #ccc;
+  background: #edf0f5;
+  vertical-align: top;
+}
+.crm-form-input input.crm-input:focus {
+  border-color: #66afe9;
+}
+.crm-select-group {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  vertical-align: top;
+}
+.crm-select-group .crm-input.crm-select {
+  background: url("../../images/icon-sys02.png") no-repeat 90% center #edf0f5;
+  padding-left: 5px;
+}
+.crm-select-group ul.crm-select-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.crm-select-group ul.crm-select-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+.crm-select-group ul.crm-select-menu li:hover,
+.crm-select-group ul.crm-select-menu li:active {
+  background: #edf0f5;
+}
+.crm-btn-lg {
+  border: none;
+  width: 184px;
+  height: 40px;
+  border-radius: 4px;
+}
+.crm-btn-common {
+  border: none;
+  width: 84px;
+  height: 32px;
+  border-radius: 4px;
+}
+.crm-btn-small {
+  border: none;
+  width: 47px;
+  height: 26px;
+  border-radius: 3px;
+  padding: 0;
+}
+.crm-btn-red {
+  background: #e9593e;
+  color: #fff;
+}
+.crm-btn-green {
+  background: #49d3c6;
+  color: #fff;
+}
+.crm-btn-blue {
+  background: #44afcf;
+  color: #fff;
+}
+.crm-btn-yellow {
+  background: #f6c028;
+  color: #fff;
+}
+.crm-btn-gray {
+  background: #afb3b9;
+  color: #fff;
+}
+/**
+  * @index页面样式
+  */
+/* 通用导航 */
+.crm-navbar {
+  width: 100%;
+  height: 80px;
+  background: url("../../images/top_bg.jpg") repeat-y center;
+}
+.crm-navbar .crm-nav-menu {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+.crm-navbar .crm-nav-menu .crm-homemain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/icon_HomeMain.jpg");
+}
+.crm-navbar .crm-logo {
+  float: left;
+  height: 80px;
+  width: 400px;
+  background: url("../../images/icon_logo.png") no-repeat 20px center;
+}
+.crm-navbar .crm-breadcrumb {
+  position: relative;
+  height: 0;
+}
+.crm-navbar .crm-breadcrumb .breadcrumb {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  position: relative;
+  left: -328px;
+  top: 46px;
+}
+.crm-navbar .crm-breadcrumb .breadcrumb span,
+.crm-navbar .crm-breadcrumb .breadcrumb li {
+  color: #fff;
+}
+.crm-navbar .crm-search {
+  float: right;
+  height: 80px;
+  margin-right: 40px;
+}
+.crm-navbar .crm-search p {
+  margin-top: 26px;
+}
+.crm-navbar .crm-search p img {
+  position: relative;
+  left: 46px;
+  top: -1px;
+}
+.crm-navbar .crm-search p input {
+  border: none;
+  background: url("../../images/search_bg.png") no-repeat center;
+  margin-left: 20px;
+}
+.crm-navbar .crm-search p .crm-navsearch-input {
+  width: 180px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 32px;
+  padding-right: 10px;
+}
+.crm-navbar .crm-search p .crm-navsearch-input:focus {
+  outline-style: hidden;
+  outline: none;
+}
+.crm-navbar .crm-search p .crm-navsearch-btn {
+  color: #fff;
+  vertical-align: top;
+  height: 25px;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+/* 通用tabs */
+.crm-tabs p.crm-tabs-info {
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  background: #edf0f5;
+}
+.crm-tabs div.crm-tabs-items {
+  background: #edf0f5;
+}
+.crm-tabs div.crm-tabs-items ul > li {
+  float: left;
+  margin-right: -15px;
+}
+.crm-tabs div.crm-tabs-items ul > li a {
+  float: left;
+  position: relative;
+  padding: 0 30px;
+  height: 0;
+  line-height: 30px;
+  text-decoration: none;
+  cursor: default ;
+  color: #fff;
+  border-bottom: 30px solid #80909f;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.crm-tabs div.crm-tabs-items ul > li a:hover,
+.crm-tabs div.crm-tabs-items ul > li a:focus {
+  border-bottom-color: #fff;
+  color: #81848b;
+}
+.crm-tabs div.crm-tabs-items ul > li.crm-active {
+  z-index: 999;
+  position: relative;
+}
+.crm-tabs div.crm-tabs-items ul > li.crm-active a {
+  border-bottom-color: #fff;
+  color: #81848b;
+}
+.ntab-ifcon {
+  position: absolute;
+  top: 100px;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+/* iframe容器 */
+.crm-iframecontainer {
+  position: absolute;
+  top: 145px;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+.crm-iframecontainer .crm-iframe {
+  width: 100%;
+  min-width: 994px;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.crm-mgTop {
+  margin-top: 15px;
+}
+.crm-mgLeft {
+  margin-left: 25px;
+}
+/*客户基本信息*/
+.crm-inLeft {
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  bottom: 0;
+}
+.crm-inLeft > ul {
+  width: 100%;
+}
+.crm-inLeft > ul > li > a {
+  display: inline-block;
+  width: 200px;
+}
+.crm-inRight {
+  margin-left: 220px;
+  margin-right: 20px;
+  position: relative;
+}
+.crm-inRight > div {
+  min-width: 980px;
+}
+.crm-inRight tr td {
+  border-top: none;
+}
+.crm-inRight .crm-tdpd {
+  padding-top: 16px;
+}
+.crm-top {
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+.crm-bottom {
+  width: 100%;
+  background: #fff;
+}
+.crm-inTitle {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.crm-overhide {
+  overflow: hidden;
+}
+.crm-result {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 76px;
+  color: #80838a;
+  margin: 0;
+  line-height: 80px;
+  background: #edf0f5;
+  z-index: 4;
+}
+.crm-instance {
+  margin-right: 20px;
+}
+.clear-max-width {
+  max-width: none;
+}
+.content-bg {
+  background: #fff;
+}
+.btn-padding-bottom {
+  padding-bottom: 20px;
+}
+.crm-outside-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 10px;
+  margin: 20px;
+}
+.input-daterange {
+  display: inline-block;
+  height: 34px;
+}
+.mg-hs-inp {
+  width: 220px;
+  display: inline-block;
+}
+.font-bold {
+  font-weight: bold;
+}
+.blk-dpy {
+  display: inline-block;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #8a8dd2;
+}
+.nav-pills > li > a {
+  border-radius: 0;
+}
+.panel {
+  border: none;
+}
+.panel-heading {
+  border-bottom: none;
+}
+.dropdown-menu {
+  padding-left: 10px;
+}
+.pika-single {
+  z-index: 50;
+  display: block;
+  position: relative;
+  color: #333;
+  background: #fff;
+  border-bottom-color: #bbb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+.pika-single:before,
+.pika-single:after {
+  content: " ";
+  display: table;
+}
+.pika-single:after {
+  clear: both;
+}
+.pika-single {
+  *zoom: 1;
+}
+.pika-single.is-hidden {
+  display: none;
+}
+.pika-single.is-bound {
+  position: absolute;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+.pika-lendar {
+  float: left;
+  width: 100%;
+}
+.pika-title {
+  position: relative;
+  text-align: center;
+}
+.pika-label {
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  z-index: 9999;
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 3px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.pika-title select {
+  cursor: pointer;
+  position: absolute;
+  z-index: 9998;
+  margin: 0;
+  left: 0;
+  top: 5px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.pika-prev,
+.pika-next {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 30px;
+  /* hide text using text-indent trick, using width value (it's enough) */
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  opacity: .5;
+  *position: absolute;
+  *top: 0;
+}
+.pika-prev:hover,
+.pika-next:hover {
+  opacity: 1;
+}
+.pika-prev,
+.is-rtl .pika-next {
+  float: left;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
+  *left: 0;
+}
+.pika-next,
+.is-rtl .pika-prev {
+  float: right;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+  *right: 0;
+}
+.pika-prev.is-disabled,
+.pika-next.is-disabled {
+  cursor: default;
+  opacity: .2;
+}
+.pika-select {
+  display: inline-block;
+  *display: inline;
+}
+.pika-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+.pika-table th,
+.pika-table td {
+  width: 14.285714285714286%;
+  padding: 0;
+}
+.pika-table th {
+  color: #999;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.pika-button {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  padding: 5px;
+  color: #666;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  background: #fff;
+}
+.pika-week {
+  font-size: 11px;
+  color: #999;
+}
+.is-today .pika-button {
+  color: #33aaff;
+  background: #f6c028;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.is-selected .pika-button {
+  color: #fff;
+  font-weight: bold;
+  background: #f6c028;
+  border-radius: 3px;
+}
+.is-disabled .pika-button {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+  opacity: .3;
+}
+.pika-button:hover {
+  color: #fff !important;
+  background: #f6c028 !important;
+  box-shadow: none !important;
+  border-radius: 3px !important;
+}
+button#datepicker-button {
+  margin-bottom: 3em;
+}
+.flow-element {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.flow-element:last-child {
+  margin-right: 0;
+}
+.flow-element input {
+  margin-top: 0;
+  display: none;
+}
+/*快捷方式*/
+.main_foreCD {
+  margin-top: 21px;
+  background: #8a8dd2;
+  padding: 10px 13px 10px 13px;
+}
+.main_icon1 a,
+.main_icon2 a {
+  width: 49%;
+  text-align: center;
+  padding: 36px 0;
+}
+.main_icon1 {
+  border-bottom: 1px solid #a1a4db;
+}
+.main_foreCD .m1 {
+  display: inline-block;
+  border-right: 1px solid #a1a4db;
+}
+.main_foreCD .m2 {
+  display: inline-block;
+}
+.main_foreCD .m3 {
+  display: inline-block;
+  border-right: 1px solid #a1a4db;
+}
+.main_foreCD .m4 {
+  display: inline-block;
+}
+/*员工信息*/
+.crm-login-pinfo {
+  background: #4fcdd9;
+  color: #fff;
+}
+.crm-login-pinfo .p1 {
+  padding-top: 20px;
+}
+.crm-login-pinfo .p3 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+#crm-date-container {
+  margin-top: 40px;
+}
+/**
+  * combSearch 样式
+  */
+.crm-combSearch {
+  background: #fff;
+  height: auto;
+}
+.crm-combSearch .crm-search-form {
+  width: 100%;
+}
+.crm-combSearch .crm-search-form form .crm-form-three {
+  width: 974px;
+  margin: 0 auto;
+  padding: 16px 0;
+  text-align: center;
+  /*button{
+          margin: 0 32px;
+        }*/
+}
+.crm-combSearch .crm-search-form form .crm-form-zero {
+  background: #fff;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar {
+  padding-top: 10px;
+  width: 974px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .dropdown {
+  display: inline-block;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .dropdown button {
+  background: transparent;
+  border: none;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .dropdown-menu {
+  padding: 0;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .dropdown-menu p {
+  padding: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .dropdown-menu p:hover {
+  background: #8a8dd2;
+  color: #ccc;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-clientStar-menu label {
+  width: 100%;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-clientStar-menu input[type=checkbox] {
+  margin: 0 5px 0 0;
+  height: 16px;
+  vertical-align: middle;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-clientStar-menu button {
+  width: 100%;
+  padding: 5px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-clientStar-menu button:hover {
+  background: #8a8dd2;
+  color: #ccc;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-businessType-menu {
+  width: 200px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-businessType-menu span {
+  display: inline-block;
+  width: 70px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-businessType-menu input {
+  margin: 0 5px 0 20px;
+  height: 16px;
+  vertical-align: middle;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-businessType-menu button {
+  width: 100%;
+  padding: 5px 0;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-businessType-menu button:hover {
+  background: #8a8dd2;
+  color: #ccc;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu {
+  width: 220px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu p {
+  height: 36px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu span {
+  display: inline-block;
+  width: 70px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu input {
+  margin: 0;
+  vertical-align: middle;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu input[type=checkbox] {
+  height: 16px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu input[type=text] {
+  width: 50px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu button {
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-rangeChoose-menu button:hover {
+  background: #8a8dd2;
+  color: #fff;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-func-bar .crm-awaysChoice-menu .aways-remove {
+  float: right;
+  margin-top: 1px;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-condRes {
+  width: 974px;
+  margin: 0 auto;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-condRes .crm-conditionResult {
+  float: left;
+  color: #333;
+  border: 1px solid #c0c0c0;
+  background: #e2e2e2;
+  margin-right: 8px;
+  padding: 0;
+}
+.crm-combSearch .crm-search-form form .crm-form-zero .crm-condRes .crm-conditionResult span {
+  background: transparent;
+  padding: 2px 5px;
+  margin: 2px;
+  float: left;
+  font-size: 12px;
+}
+.crm-combSearch .crm-searchResult {
+  width: 100%;
+  height: 400px;
+}
+.clientInfoSum {
+  background: #fff;
+  color: #b0b3b9;
+}
+.clientInfoSum .crm-clientInfo {
+  padding: 10px 10px 20px 10px;
+}
+.clientInfoSum .crm-clientInfo span {
+  float: left;
+}
+.clientInfoSum .crm-clientInfo .crm-clientInfo-btn {
+  width: 102px;
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  display: inline-block;
+  background: #e9593e;
+  border: none;
+  color: #fff;
+}
+.clientInfoSum .crm-client-tabs {
+  margin: 20px 10px 0 10px;
+  height: 30px;
+}
+.clientInfoSum .crm-client-tabs li a {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b0b3b9;
+  color: #b0b3b9;
+  text-decoration: none;
+}
+.clientInfoSum .crm-client-tabs li a:hover,
+.clientInfoSum .crm-client-tabs li a:focus {
+  color: #8a8dd2;
+  border-bottom: 2px solid #8a8dd2;
+}
+.clientInfoSum .crm-client-tabs li.client-active a {
+  color: #8a8dd2;
+  border-bottom: 2px solid #8a8dd2;
+}
+.clientInfoSum .crm-client-table {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+}
+.clientInfoSum .crm-client-table .crm-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #81848b;
+}
+.clientInfoSum .crm-client-table .crm-table td {
+  border: 2px solid #f2f2f3;
+  padding: 5px;
+}
+.clientInfoSum .crm-client-table .crm-table .crm-td-key {
+  width: 3%;
+  text-align: right;
+}
+.clientInfoSum .crm-client-table .crm-table .crm-td-value {
+  width: 5%;
+  text-align: left;
+}
+.clientInfoSum .crm-client-table .crm-vas {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+.clientInfoSum .crm-client-table .crm-num {
+  float: right;
+}
+.clientInfoSum .crm-client-table .crm-look {
+  color: #81848b;
+  text-decoration: underline;
+}
+.crm-clientcontainer {
+  position: absolute;
+  top: 95px;
+  bottom: 4px;
+  width: 100%;
+}
+.crm-iframe {
+  width: 100%;
+  min-width: 994px;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.crm-clientFirm {
+  /* margin: 40px 15px 20px 15px;
+  height: 130px;
+  background: #fff;*/
+  margin: 40px 15px 20px 15px;
+  height: 90px;
+  padding-top: 10px;
+  background: #fff;
+}
+.crm-clientFirm p {
+  background: #edf0f5;
+  color: #80838a;
+  height: 36px;
+  line-height: 26px;
+  padding-bottom: 8px;
+}
+.crm-clientFirm .crm-form {
+  margin-left: 30px;
+  margin-top: 17px;
+  height: 40px;
+}
+.crm-clientFirm .crm-form .crm-formgroup {
+  width: 100%;
+}
+.crm-clientFirm .crm-form .crm-formgroup label {
+  float: left;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  color: #81848b;
+  vertical-align: middle;
+}
+.crm-clientFirm .crm-form .crm-formgroup input {
+  float: left;
+  vertical-align: top;
+  width: 423px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #e4e5ec;
+  background: #f6f6f6;
+  color: #b9bcc1;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.crm-clientFirm-container {
+  margin: 0 15px 0 15px;
+  background: #fff;
+}
+.crm-clientFirm-container .crm-clientFirm-btn {
+  margin-top: 8px;
+}
+.crm-clientFirm-container .crm-clientFirm-btn button {
+  border: none;
+  width: 47px;
+  height: 26px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.crm-clientFirm-container .panel-body th,
+.crm-clientFirm-container tr {
+  height: 40px;
+}
+.crm-acc .crm-content {
+  background: #fff;
+  padding: 32px;
+}
+.crm-acc .form-group input {
+  width: 350px;
+  height: 36px;
+  margin-right: 12px;
+}
+.crm-acc .form-group label {
+  max-width: none;
+}
+.crm-acc .form-bottom {
+  margin-bottom: 35px;
+}
+.crm-acc .font-lg {
+  font-size: 24px;
+  color: #999;
+  margin-right: 5px;
+}
+.crm-acc .edit-font {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #999;
+  vertical-align: super;
+  font-weight: 800;
+  color: #999;
+}
+/*客户视图查询*/
+.crm-khview > div {
+  margin-bottom: 5px;
+  height: 140px;
+  line-height: 185px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.crm-khview > div div {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.crm-khview > div .crm-khview1 {
+  background: url(../../images/view01.png) center 40px no-repeat;
+  background-color: #53d7dc;
+}
+.crm-khview > div .crm-khview2 {
+  background: url(../../images/view02.png) center 40px no-repeat;
+  background-color: #53d7dc;
+}
+.crm-khview > div .crm-khview3 {
+  background: url(../../images/view03.png) center 40px no-repeat;
+  background-color: #53d7dc;
+}
+.crm-khview > div .crm-khview4 {
+  background: url(../../images/view04.png) center 40px no-repeat;
+  background-color: #44afd1;
+}
+.crm-khview > div .crm-khview5 {
+  background: url(../../images/view05.png) center 40px no-repeat;
+  background-color: #44afd1;
+}
+.crm-khview > div .crm-khview6 {
+  background: url(../../images/view06.png) center 40px no-repeat;
+  background-color: #44afd1;
+}
+.crm-khview > div .crm-khview7 {
+  background: url(../../images/view07.png) center 40px no-repeat;
+  background-color: #8a8dd2;
+}
+.crm-khview > div .crm-khview8 {
+  background: url(../../images/view08.png) center 40px no-repeat;
+  background-color: #8a8dd2;
+}
+.crm-khview > div .crm-khview9 {
+  background: url(../../images/view09.png) center 40px no-repeat;
+  background-color: #8a8dd2;
+}
+.crm-khview > div .ndel-bg {
+  background-color: #ccc;
+}
+.rdHistory .crm-body {
+  width: 100%;
+  height: 99%;
+}
+.rdHistory body {
+  min-width: 980px;
+}
+.rdHistory .crm-result {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 76px;
+  color: #80838a;
+  margin: 0;
+  line-height: 80px;
+  background: #edf0f5;
+  z-index: 4;
+  padding-left: 20px;
+}
+.rdHistory .crm-content {
+  background: #fff;
+  padding: 10px;
+}
+.rdHistory .crm-content .form-inline .input-group {
+  display: block;
+}
+.rdHistory .form-bottom {
+  margin-bottom: 35px;
+}
+.rdHistory .crm-input {
+  margin-right: 20px;
+}
+.rdHistory .btn-rdsizing {
+  width: 80px;
+  height: 35px;
+  margin-left: 40px;
+}
+.crm-migrationHistory #crm-theader th {
+  line-height: 34px;
+  white-space: nowrap;
+}
+.crm-table-prompt {
+  display: table;
+}
+.crm-table-prompt span {
+  height: 20px;
+  vertical-align: middle;
+}
+.chprd .hprd-title {
+  height: 40px;
+  line-height: 40px;
+  background: #8a8dd2;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 8px;
+}
+.chprd .hprd-detail > li {
+  height: 30px;
+  text-indent: 10px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.chprd .hprd-detail > ul {
+  border-bottom: 1px solid #ddd;
+}
+.chprd .hprd-detail > ul li {
+  height: 30px;
+  text-indent: 15px;
+  line-height: 30px;
+}
+.chprd .hprd-detail li:hover {
+  background: #fafafa ;
+  color: #212121;
+}
+.chprd .chprd-tag li {
+  width: 200px;
+  height: 80px;
+  border-radius: 6px;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  color: #212121;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.loc-sev-view {
+  position: relative;
+  padding-left: 220px;
+  padding-right: 20px;
+}
+.loc-sev-view .crm-inLeft {
+  top: 80px;
+}
+.loc-sev-view .loc-inRight {
+  width: 100%;
+}
+.loc-sev-view .loc-inRight .panel-title {
+  height: 34px;
+  line-height: 34px;
+}
+.loc-sev-view .loc-inRight .panel-title .date-sel {
+  float: right;
+}
+.loc-sev-view .loc-inRight .compar-curr {
+  display: inline-block;
+  float: right;
+}
+.notabs-window {
+  position: absolute;
+  top: 90px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #fff;
+}
+.notabs-window .tabs-left {
+  position: fixed;
+  top: 90px;
+  bottom: 10px;
+  left: 10px;
+  width: 200px;
+  box-shadow: 3px 5px 20px #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+.notabs-window .tabs-right {
+  padding-left: 220px;
+}
+.notabs-window .tabs-right .tabs-header {
+  height: 42px;
+}
+.notabs-window .tabs-right .tabs-header .tabs-nav {
+  display: inline-block;
+  float: left;
+}
+.notabs-window .tabs-right .tabs-header .data-serch {
+  display: inline-block;
+  float: right;
+  padding-top: 9px;
+  height: 42px;
+}
+.notabs-window .tabs-right .tabs-header .data-serch .mg-hs-inp {
+  height: 28px;
+}
+.notabs-window .tabs-right .tab-content {
+  margin-top: 20px;
+}
+.notabs-window .tabs-right .tab-content .set-table {
+  margin-top: 10px;
+}
+.notabs-window .tabs-right .tab-content .set-table tr th {
+  border-top: none;
+}
+.notabs-window .tabs-right .tab-content .head-unit {
+  display: inline-block;
+  float: right;
+}
+.notabs-window .tabs-right .ser-frst {
+  background: #fff;
+  padding: 20px 0;
+}
+.notabs-window .tabs-right .resu-tab {
+  margin-top: 20px;
+  background: #fff;
+  padding: 1px;
+}
+.notabs-window .tabs-right .resu-tab .tab-header {
+  height: 60px;
+  background: #f6f7f9;
+  padding: 17px 20px;
+}
+.notabs-window .tabs-right .data-hov {
+  position: fixed;
+  right: 10px;
+  top: 180px;
+}
+.notabs-window .tabs-right .data-hov li {
+  float: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+}
+.notabs-window .tabs-right .data-hov li:hover,
+.notabs-window .tabs-right .data-hov li:focus {
+  background: #f6f6f6;
+  border-color: #ddd;
+}
+.notabs-window .tabs-right .data-hov li .active:focus,
+.notabs-window .tabs-right .data-hov li .active:hover {
+  border: none;
+}
+.notabs-window .tabs-right .data-hov li a {
+  color: #b0b3b9;
+}
+.notabs-window .tabs-right .data-hov li a:focus,
+.notabs-window .tabs-right .data-hov li a:hover {
+  color: #b0b3b9;
+}
+.notabs-window .tabs-right .crm-btn-common {
+  height: 26px;
+}
+.notabs-window .tabs-right .list-group-item.active,
+.notabs-window .tabs-right .list-group-item.active:hover,
+.notabs-window .tabs-right .list-group-item.active:focus {
+  border-color: #ddd;
+}
+.notabs-window .tabs-right .echarts-con {
+  width: 80%;
+}
+.notabs-window .tabs-right .echarts-con .piebox {
+  width: 500px;
+  height: 250px;
+}
+.notabs-window .tabs-right .echarts-box {
+  width: 680px;
+  height: 450px;
+}

@@ -1,0 +1,284 @@
+// 组合查询页面样式
+
+.multiple-search{
+  width: 100%;
+  background: #fff;
+
+
+  // 搜索条件
+  .search-condition-container{
+    width: 100%;
+    background: #fff;
+    padding: 20px 10px;
+
+    .search-condition{
+      width: 100%;
+      background: #fff;
+      .search-container{
+        background: #fff;
+        padding: 10px 0 20px 0;
+        .form-res .btn-group{
+          margin: 2px;
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 5px;
+            li{
+              padding: 0;
+              border: none;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+          }
+          .btn-danger{
+            background: #e0e0e0;
+            border-color: #ccc;
+          }
+        }
+        .crm-dropFirst{
+          border-radius: 4px 0 0 4px;
+        }
+        .crm-dropSecond{
+          border-radius: 0 4px 4px 0;
+        }
+        .range-ul>li{
+          width: 300px;
+          padding: 0 10px;
+          .col-sm-5{width: 45%;padding: 0;}
+          .col-sm-2{width: 10%;padding: 0;}
+          .form-control{
+            width: 100%;
+          }
+          .glyphicon{line-height: 30px}
+        }
+        .itemClose{
+          color: #fff;
+          font-weight: bolder;
+        }
+        form{
+          .col-sm-2,
+          .col-sm-3,
+          .col-sm-4{
+            padding: 0 2px;
+          }
+          &>.form-group{
+            .drop-title{font-weight: bold;padding-top: 6px}
+            margin: 0 1px;
+          }
+        }
+        //客户经理
+        .client-manager{
+          width: 227px;
+          label{
+            padding: 8px 0 9px 0;
+          }
+          .col-sm-4,
+          .col-sm-8{
+            padding-left: 0;
+            padding-right: 0;
+            input.down_arrow{border-radius: 0;background-color: #f6f6f6;}
+            #custom-manager{
+              box-sizing: border-box;
+              width: 100%;
+            }
+          }
+          .name-list{
+            display: none;
+            border-radius: 4px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            li{text-align: left;}
+            li:hover{
+              background: @main-color-1;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+        // 客户类型
+        .client-type{
+          button{border-radius: 0;background: #f6f6f6}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 0;
+            li{
+              padding: 0;
+              &:hover{
+                background: transparent;
+              }
+            }
+          }
+        }
+        // 客户星级
+        .client-star{
+          button{border-radius: 0;background: #f6f6f6;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 0;
+            li{
+              padding: 0;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+            .star-all{
+              cursor: pointer;
+              &:hover{
+                background: @main-color-1;
+                color: #fff;
+              }
+            }
+          }
+          .dropdown-menu>li>.checkbox{
+            padding: 0 10px;
+            width: 100%;
+            label>input{
+              margin-right: 10px;
+            }
+          }
+        }
+        // 是否认定
+        .sure-not{
+          button{border-radius: 0;background: #f6f6f6;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 0;
+            li{
+              padding: 0;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+          }
+        }
+        // 更多
+        .more-condi{
+          button{border-radius: 0;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 0;
+            li{
+              padding: 0;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+          }
+          #more-condi-ul{
+            .ul-content{
+              max-height: 193px;
+              overflow-y: auto;
+              div{
+                width: 100%;
+              }
+            }
+            li{
+              padding: 2px 10px;
+              b{color: #333;}
+              .checkbox{
+                input[type=checkbox],
+                span{
+                  vertical-align: middle;
+                }
+                input[type=checkbox]{
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+        // 业务品种
+        .business-type{
+          button{border-radius: 0;background: #f6f6f6;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 5px;
+            max-height: 247px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            li{
+              border: none;
+              padding: 5px;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+            .filter-li{width: 200px}
+          }
+        }
+        // 区间筛选
+        .range-choose{
+          button{border-radius: 0;background: #f6f6f6;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 5px;
+            max-height: 247px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            li{
+              border: none;
+              padding: 5px;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+            .filter-li{width: 200px}
+          }
+        }
+
+
+        // 常用组合
+        .aways-choose{
+          button{border-radius: 0;}
+          ul.dropdown-menu{
+            margin: 0;
+            padding: 0;
+            li{
+              padding: 0;
+              &:hover{
+                background: transparent;
+                color: @font-color-1;
+              }
+            }
+          }
+          #aways-choose-ul{
+            left: auto;
+            right: 0;
+            &>li{width: 450px;}
+            .row>div.col-sm-11{
+              text-decoration: underline;
+              color: #2aabd2;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  // 搜索结果
+  .search-result-container{
+    table {
+      tr th {
+        color: #b3b3bb;
+      }
+      tr td {
+        color: #818489;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/* CSS Document */
+.menubar {
+	width: 100%;
+	padding: 3px 0 1px;
+	font-size: 11px;
+	border: 1px solid #99BCE8;
+	border-left: 0;
+	border-right: 0;
+	background: #D3E1F1 url(../images/toolbar/toolbar-default-bg.gif)
+		repeat-x !important;
+	font-family: helvetica, tahoma, verdana, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 21px;
+}

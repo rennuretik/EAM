@@ -1,0 +1,65 @@
+.progressBar {
+	position: relative;
+	border: 1px #CCC solid;
+	height: 28px;
+	width: 100%;
+	margin: 1px;
+	padding: 1px;
+}
+
+.progressBar div.progressBarStatus {
+	background: #99BBE8;
+	height: 28px;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	width: 0%;
+}
+
+.progressBar div.error {
+	background: #FF0000;
+}
+
+.progressBar div.progressBarText {
+	position: absolute;
+	width: 100%;
+	top: 7px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.progressBar a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	margin-left: 2px;
+	outline: none;
+}
+
+.progressBar a:hover {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.progressBar-btn-cancel {
+	background: url(../images/panel/close-hover.jpg) no-repeat;
+}
+
+div.progressBarText .fileName {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+div.progressBarText .fileSize {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+div.progressBarText .fileSpeed {
+	float: left;
+	width: 20%;
+	text-align: center;
+}

@@ -1,0 +1,76 @@
+.ui-menu{
+	position:absolute;
+	top:-9999px;
+	left:-9999px;
+}
+.ui-menu ul{
+	list-style-type:none;
+	float:left;
+	border:1px solid #bbb;
+	background-color:#fffadf;
+	padding:2px;
+}
+.ui-menu ul li{
+	float:left;
+	clear:both;
+	height:24px;
+	cursor:pointer;
+	line-height:24px;
+	white-space:nowrap;
+	padding:0 30px 0 3px;
+	user-select: none;/*通用禁止选中*/
+	-o-user-select: none;/*IE10禁止选中*/
+	-ms-user-select: none;/*IE禁止选中*/
+	-moz-user-select: -moz-none;/*火狐禁止选中*/
+	-webkit-user-select: none;/*谷歌禁止选中*/
+}
+.ui-menu ul li.menu-sep {
+	margin: 3px 0 3px 24px;/*外边距（上右下左）*/
+	line-height: 2px;/*行高*/
+	height:2px;
+	font-size: 2px;
+	background:url(../icons/menu_sep.png) repeat-x;
+	cursor:default;
+	_display:inline;
+}
+.ui-menu ul li img{
+	vertical-align:middle;
+	margin:0;
+	_margin-top:2px;
+}
+.ui-menu ul li input[type="checkbox"] {
+	vertical-align:middle;
+	margin:0;
+}
+.ui-menu ul li span{
+	margin-left:10px;
+	user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+.ui-menu ul li.sub{
+	background-repeat:no-repeat;
+	background-position:right 9px;
+
+}
+.ui-menu ul li.active{
+	background-color:#fcf8e3;
+	border-radius:3px;/*圆角*/
+	border:1px solid #d4d4d4;
+	height:22px;
+	line-height:22px;
+	background-position:right -8px;/*背景图片的位置*/
+	padding:0 29px 0 2px;/*内边距（上右下左）*/
+}
+.ui-menu ul ul{
+	display:none;
+	position:absolute;
+}
+.ui-menu li.menuitem-disabled {
+	color: #ccc;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}

@@ -1,0 +1,136 @@
+.multiselect-wrap {
+	margin: 0;
+	padding: 0;
+}
+
+.multiselect-wrap table {
+	width: 100%;
+	height: 100%;
+}
+
+.multiselect-wrap table td.label {
+	font-size: 12px;
+}
+
+.multiselect-wrap table .fromselector {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	border: 1px solid #c90001;
+	border-top: 0;
+}
+
+.multiselect-wrap .multi-item {
+	list-style: none;
+	list-style-position: outside;
+	list-style-image: none;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.multiselect-wrap .multi-item li {
+	list-style: none;
+	cursor: pointer;
+	padding: 1px 2px;
+	border-style: dotted;
+	border-color: #FFFFFF;
+	border-width: 1px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.multiselect-wrap .multi-item li.selected {
+	border-color: #8eabe4;
+	background: #ffdd95 !important;
+}
+
+.multiselect-wrap .multi-item li.hover {
+	background: #ffdd95;
+	border-color: #c90001;
+}
+
+.multiselect-wrap table td.buttons {
+	width: 35px;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.multiselect-wrap table td.buttons img {
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border: 0;
+	overflow: hidden;
+	margin: 4px; +
+	margin: 2px;
+}
+
+.multiselect-wrap table .toselector {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	border: 1px solid #c90001;
+	border-top: 0;
+}
+
+.multiselect-wrap table .multi-list {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.multiselect-wrap table span {
+	position: absolute;
+	color: #15428B;
+}
+
+.multiselect-wrap table span.line {
+	top: 0;
+	border-top: 1px solid #c90001;
+	font-size: 0;
+	height: 5px;
+}
+
+.multiselect-wrap table span.title {
+	top: -7px;
+	left: 8px;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+}
+/*造作按钮图标*/
+.multiselect-wrap .top {
+	background: url(../images/form/top.gif) no-repeat;
+}
+
+.multiselect-wrap .up {
+	background: url(../images/form/up.gif) no-repeat;
+}
+
+.multiselect-wrap .bottom {
+	background: url(../images/form/bottom.gif) no-repeat;
+}
+
+.multiselect-wrap .down {
+	background: url(../images/form/down.gif) no-repeat;
+}
+
+.multiselect-wrap .left {
+	background: url(../images/form/left.gif) no-repeat;
+}
+
+.multiselect-wrap .leftAll {
+	background: url(../images/form/leftall.gif) no-repeat;
+}
+
+.multiselect-wrap .right {
+	background: url(../images/form/right.gif) no-repeat;
+}
+
+.multiselect-wrap .rightAll {
+	background: url(../images/form/rightall.gif) no-repeat;
+}

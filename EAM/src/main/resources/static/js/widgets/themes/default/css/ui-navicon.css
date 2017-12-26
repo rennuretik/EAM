@@ -1,0 +1,137 @@
+.nav-icon{
+	height:16px;
+	display:inline-block;
+	background-image:url("../icons/nav-icon.png") ;
+	background-repeat:no-repeat ;
+}
+/*列表图标*/
+.nav-list{
+	background-position:0 0;
+	width:16px;
+}
+/*设置图标*/
+.nav-set{
+	background-position:-26px 0;
+	width:16px;
+}
+/*事件图标*/
+.nav-time{
+	background-position:-52px 0;
+	width:16px;
+}
+/*保存图标*/
+.nav-save{
+	background-position:-78px 0;
+	width:16px;
+}
+/*文本图标*/
+.nav-page{
+	background-position:-104px 0;
+	width:16px;
+}
+/*曲线图标*/
+.nav-line{
+	background-position:-130px 0;
+	width:16px;
+}
+/*复制图标*/
+.nav-copy{
+	background-position:-156px 0;
+	width:16px;
+
+}
+/*搜索图标*/
+.nav-search{
+	background-position:-182px 0;
+	width:16px;
+}
+/*录入图标*/
+.nav-insert{
+	background-position:-208px 0;
+	width:16px;
+}
+/*连续图标*/
+.nav-continue{
+	background-position:0 -26px;
+	width:16px;
+}
+/*无序列表图标*/
+.nav-ol{
+	background-position:-52px -26px;
+	width:16px;
+}
+/*美元图标*/
+.nav-dollar{
+	background-position:-78px -26px;
+	width:16px;
+}
+/*打印图标*/
+.nav-print{
+	background-position:-104px -26px;
+	width:16px;
+}
+/*收藏图标*/
+.nav-fav{
+	background-position:-130px -26px;
+	width:16px;
+}
+/*列图标*/
+.nav-column{
+	background-position:-156px -26px;
+	width:16px;
+}
+/*笔记本图标*/
+.nav-trans{
+	background-position:-182px -26px;
+	width:16px;
+}
+/*文件传输*/
+.nav-file{
+	background-position:-208px -26px;
+	width:16px;
+}
+/*收藏包图标*/
+.nav-box{
+	background-position:0 -52px;
+	width:16px;
+}
+/*日历图标*/
+.nav-datatime{
+	background-position:-26px -52px;
+	width:16px;
+}
+/*通讯录*/
+.nav-tellist{
+	background-position:-52px -52px;
+	width:16px;
+}
+/*爱心图标*/
+.nav-heart{
+	background-position:-78px -52px;
+	width:16px;
+}
+/*工具图标*/
+.nav-tool{
+	background-position:-104px -52px;
+	width:16px;
+}
+/*分类图标*/
+.nav-tool{
+	background-position:-130px -52px;
+	width:16px;
+}
+/*平面图标*/
+.nav-square{
+	background-position:-156px -52px;
+	width:16px;
+}
+/*编辑图标*/
+.nav-edit{
+	background-position:-182px -52px;
+	width:16px;
+}
+/*下载图标*/
+.nav-download{
+	background-position:-104px -52px;
+	width:16px;
+}

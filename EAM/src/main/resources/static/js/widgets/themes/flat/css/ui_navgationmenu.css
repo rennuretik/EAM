@@ -1,0 +1,139 @@
+#menu{
+	 /* IE6 不支持min-width属性，但是IE7+和W3C支持 */ 
+	 min-width:1000px; 
+	 /* 用CSS表达式让IE6也支持最小宽度 */  
+	 _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"");  
+	 background:url("../images/navgationmenu/menu_bg.jpg") repeat-x;
+	 height: 32px;
+	 border: 1px solid #8db2e3;
+}
+
+.menu_box{
+	width:90%;
+	float:right;
+}
+.menu_box_left{
+	float:left;
+}
+.menu_box_right{
+	float:right; 
+	display:inline-block; 
+	width:290px;
+}
+
+
+/*收缩菜单*/
+.na_body{
+	display:inline-block;
+	float:left;
+	background:url("../images/navgationmenu/menu_bg.jpg") repeat-x;
+	border: 1px solid #8db2e3;
+}
+.na_content{
+	float:left;
+	width:100%;
+	padding:3px 10px;
+	background:#eef4fb;
+	display:inline-block;
+	overflow-y:auto;
+}
+.na_em{
+	float:right;
+	width:14px;
+	height:14px;
+	overflow:hidden;
+	background:url("../images/navgationmenu/vicon.png") no-repeat;
+	display:inline-block;
+}
+.na_em_expand {
+	background-position:0 0;
+}
+.na_em_collapse {
+	background-position:0 -16px;
+}
+
+.na_text{
+	float:left;
+	width:15px;
+	height:15px;
+	overflow:hidden;
+	display:inline-block;
+}
+.child_menu span{margin:10px 3px 0 0;}
+.child_menu{
+	height:30px;
+	background:#fbede0;
+	background:url("../images/navgationmenu/vbg.gif") repeat-x;
+	border:1px solid #99bbe8;
+	line-height:30px;
+	margin-top:8px;
+	padding-left:4px;
+	font-size:14px;
+	font-family:"\5FAE\8F6F\96C5\9ED1";
+	cursor:pointer;
+}
+.child_menu .na_em{margin:10px 10px 0 0;}
+.na_list{
+	background:#fff; 
+	border-left:1px solid #99bbe8; 
+	border-right:1px solid #99bbe8;
+}
+.na_list li{
+	width:100%;
+	border-bottom:1px solid #c6dffb;
+}
+.na_list li a{
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	display:inline-block;
+	font-size:12px;
+	color:#333065;
+	font-family:"\5FAE\8F6F\96C5\9ED1";
+	text-decoration:none;
+}
+.na_list li a,.na_list li a:hover{
+	color:#ed4948;
+	text-decoration:none;
+}
+
+.namenu-noscroll{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.shadow{
+	display:inline-block;
+	float:right;
+	height:555px;
+	width:4px;
+	background:url("../images/navgationmenu/left_img.png") repeat-y;
+}
+.hide_but{
+	display:inline-block;
+	background:url("../images/navgationmenu/hide.png") no-repeat;
+	z-index:1;
+	width:11px;
+	height:100px;
+	position:absolute;
+	top:50%;
+	text-align:center;
+	_left:206px;
+}
+
+
+/*右边*/
+.right{
+	background:#e8e8e8;
+	height:555px;
+	width:83.5%;
+	_width:82.9%;
+	float:right;
+}
+.main{
+	display:inline-block;
+	background:#e8e8e8;
+	height:555px;
+	float:right;
+	width:100%;
+}

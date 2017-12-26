@@ -1,0 +1,134 @@
+.layout-container {
+	position: relative;
+	float: left;
+}
+
+.layout-north {
+	width: 100%;
+	background: #FFFFFF;
+	float: left;
+}
+
+.layout-middle {
+	width: 100%;
+	float: left;
+	display: inline;
+}
+
+.layout-west {
+	height: 100%;
+	float: left;
+	border: 1px solid #c90001;
+	border-right: 0;
+}
+
+.layoutborder_right {
+	border-right: 1px solid #c90001 !important;
+}
+
+.layoutborder_left {
+	border-left: 1px solid #c90001 !important;
+}
+
+.layoutborder_top {
+	border-top: 1px solid #c90001 !important;
+}
+
+.layout-center {
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 0;
+	display: inline;
+	border: 1px solid #c90001;
+}
+
+.layout-east {
+	height: 100%;
+	background: #FFFFFF;
+	float: left;
+	border: 1px solid #c90001;
+	border-left: 0;
+}
+
+.layout-south {
+	width: 100%;
+	background: #FFFFFF;
+	float: left;
+	overflow: hidden;
+}
+
+.horizontal-separator {
+	width: 100%;
+	height: 5px;
+	text-align: center;
+	float: left;
+	font: 0px Arial;
+	background: #E8E8E8;
+}
+
+.separator-default {
+	opacity: 0.5;
+	filter: (opacity=50);
+}
+
+.separator-hover {
+	opacity: 1;
+	filter: (opacity=100);
+}
+
+/*div中的图标在垂直方向居中显示的css处理   start*/
+.vertical-separator {
+	width: 5px;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	display: table;
+	float: left;
+	position: relative;
+	background: #E8E8E8;
+}
+
+.vertical-separator a {
+	display: table-cell;
+	position: absolute;
+	top: 50%;
+	vertical-align: middle; +
+	margin-left: -2px;
+	_margin-left: -2px;
+}
+/**+html .vertical-separator a{
+	position:absolute;
+	top:50%;
+	text-align:center;
+}
+*+html .vertical-separator a img{
+	position:relative;
+	top:-50%;
+	left:-50%;
+}
+*html .vertical-separator a{
+	position:absolute;
+	top:51%;
+	text-align:center;
+	display:block;
+}
+*html .vertical-separator a img{
+	position:relative;
+	top:-50%;
+	left:-50%;
+}
+.vertical-separator a:hover{
+	cursor:default;
+}*/
+img {
+	border: none;
+}
+
+a {
+	color: #0064B1;
+	text-decoration: none;
+	outline: none;
+	blr: expression(this.onFocus = this.blur ());
+}
+/*div中的图标在垂直方向居中显示的css处理   end*/

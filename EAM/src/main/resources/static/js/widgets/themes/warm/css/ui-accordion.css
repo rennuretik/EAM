@@ -1,0 +1,87 @@
+/* CSS Document */
+
+.accordion-container {
+	border: 1px solid #c90001;
+	overflow: hidden;
+}
+
+.accordion-container-noborder {
+	border: 0;
+}
+
+.accordion {
+	overflow: hidden;
+}
+
+.accordion-title {
+	background:#f89a6c;
+	line-height: 20px;
+	padding: 2px 0 2px 5px;
+	border-top: 1px solid #c90001;
+	width: 100%;
+	font-size: 12px;
+	-moz-user-select: none;/*火狐禁止选中*/
+	-webkit-user-select: none;/*谷歌禁止选中*/
+	-ms-user-select: none;/*IE禁止选中*/
+	white-space: nowrap;/*文本不换行*/
+	word-break: keep-all;/*文本不换行*/
+	overflow: hidden;
+	position:relative;
+	cursor:pointer;
+}
+
+.accordion-title:hover{
+	background:#ffce8f;
+}
+
+.accordion-title-noborder {
+	border-top: 0;
+}
+
+.accordion-content {
+	display: none;
+	overflow: hidden;
+}
+
+.accordion-content-first-default {
+	display: block;
+}
+
+.accordion-title-active {
+	background:#e83737;
+	font-weight: bold;
+	border-bottom: 1px solid #c90001;
+	color:#fff;
+}
+
+.accordion-icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	float: left;
+	margin-top: 3px;
+}
+
+.accordion-tool {
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:3px;
+	right:5px;
+}
+
+.accordion-collapse {
+	background: url(../images/accordion/accordion_collapse.png) no-repeat;
+	-moz-opacity: 0.6;/*火狐下背景透明度*/
+	-khtml-opacity: 0.6;/*IE下背景透明度*/
+	opacity: 0.6;/*谷歌下背景透明度*/
+}
+
+.accordion-expand {
+	background: url(../images/accordion/accordion_expand.png) no-repeat;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}

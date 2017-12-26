@@ -1,0 +1,310 @@
+/* CSS Document */
+.grid-container {
+	text-align: left;
+	overflow: hidden;
+	border-top: 1px solid #A4BED4;
+	background: #FFFFFF;
+	cursor: default;
+}
+
+.grid-container .grid-header {
+	overflow: hidden;
+	/*height:26px;*/
+	position: relative;
+}
+
+.grid-header .grid-header-inner {
+	overflow: hidden;
+	/*background:url(../images/grid/column-header-over-bg.gif) repeat-x;*/
+	position: relative;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	display: table;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+td,th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+.grid-header-table {
+	table-layout: fixed;
+	position: relative;
+	background:#f7f9fa;/*url(../images/grid/grid-header-bg3.gif) repeat-x*/
+}
+
+.grid-header .grid-header-table tr {
+	background:#f7f9fa;/*url(../images/grid/grid-header-bg3.gif) repeat-x*/
+}
+
+.grid-header .grid-header-table td {
+	border-bottom: 1px solid #c90001;
+	background-color: transparent;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: black;
+	vertical-align: middle;
+	line-height: normal;
+	font-weight: normal;
+	-moz-user-select: none;
+	-moz-user-select: -moz-none;
+	overflow: hidden;
+	empty-cells: show;
+	position: relative;
+}
+
+.grid-header .grid-header-table td.hover {
+	background: url(../images/grid/column-header-over-bg2.gif) repeat-x;
+}
+
+.grid-header .grid-header-table td div.headerinner {
+	position: relative;
+	white-space: nowrap;
+	padding: 5px 4px 6px; *+
+	padding: 4px 4px;
+	zoom: 1;
+	user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	cursor: default;
+	overflow: hidden;
+}
+
+.grid-header .grid-header-table td span.headercell {
+	overflow: hidden;
+	padding-left: 4px;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.grid-header .grid-header-table td div.headertrigger {
+	background: url(../images/grid/grid-trigger-btn.gif) 0 -12px;
+	width: 14px;
+	height: 25px;
+	_height: 23px;
+	position: absolute;
+	right: 2px;
+	top: 0px; *+
+	top: -1px;
+	/*z-index: 2;*/
+	cursor: pointer;
+	display: none;
+}
+
+.grid-header .grid-header-table td span.sort-asc {
+	padding-right: 16px;
+	background: url(../images/grid/sort-asc.gif) no-repeat scroll right 5px
+		transparent;
+}
+
+.grid-header .grid-header-table td span.sort-desc {
+	padding-right: 16px;
+	background: url(../images/grid/sort-desc.gif) no-repeat scroll right 5px
+		transparent;
+}
+
+.grid-header .grid-header-table td div.headerresizer {
+	width: 1px;
+	font-size: 0px;
+	height: 100%;
+	*height: 26px;
+	position: absolute !important;
+	right: 0;
+	*+top: 0px; 
+	top: -1px;
+	/*z-index: 2;*/
+	cursor: e-resize;
+	border-right: 1px solid #c90001;
+}
+
+.grid-container .grid-body {
+	width: 100%;
+	overflow: auto;
+	background: #FFFFFF;
+}
+
+.grid-body .grid-body-table {
+	table-layout: fixed;
+}
+
+.grid-body table.grid-body-table tr {
+	height: 20px;
+}
+
+.grid-body .grid-body-table tr.odd_bg {
+	background-color: #ffdd95;
+}
+
+.grid-body table.grid-body-table tr td {
+	font-family: Tahoma;
+	font-size: 11px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.grid-body table.grid-body-table td {
+	border-width: 0px 1px 0px 0px;
+	border-style: solid;
+	border-color: transparent #c90001 #c90001 transparent;
+	-moz-user-select: none;
+	-moz-user-select: -moz-none;
+	overflow: hidden;
+	padding: 0px;
+	height: 20px;
+	empty-cells: show;
+}
+
+.bodycell-biaoji {
+	background: url(../images/grid/editor.png) no-repeat right top;
+}
+
+.grid-header table.grid-header-table td img.common {
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+}
+
+.grid-body table.grid-body-table td img.common {
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+}
+
+.grid-header table.grid-header-table td img.uncheck {
+	background: url(../images/grid/item_uncheck.gif) center right no-repeat;
+}
+
+.grid-header table.grid-header-table td img.check {
+	background: url(../images/grid/item_check.gif) center right no-repeat;
+}
+
+.grid-body table.grid-body-table td img.uncheck {
+	background: url(../images/grid/item_uncheck.gif) center right no-repeat;
+}
+
+.grid-body table.grid-body-table td img.check {
+	background: url(../images/grid/item_check.gif) center right no-repeat;
+}
+
+.grid-body table.grid-body-table td img.collapse {
+	background: url(../images/grid/item_collapse.gif) center right no-repeat;
+}
+
+.grid-body table.grid-body-table td img.expand {
+	background: url(../images/grid/item_expand.gif) center right no-repeat;
+}
+
+.grid-body .grid-body-table td div.bodycell {
+	padding: 0 8px;
+	width: auto;
+	overflow: hidden;
+}
+
+.grid-body .grid-body-table td div.bodycell div {
+	margin-left: -8px;
+}
+
+.grid-body .grid-body-table td div.bodycell div.textarea-container {
+	margin-left: -13px;
+}
+
+.grid-body .grid-body-table tr.rowselected {
+	border: 1px solid #ffa952 !important;
+	background: #FFF1CC url(../images/grid/row_selected2.png) repeat-x !important;
+	background-position: 0px 0px;
+	vertical-align: middle;
+	padding-top: 0px;
+	max-width: 20px;
+	max-height: 20px;
+}
+
+.grid-body .grid-body-table tr.rowhover {
+	background: url(../images/grid/row-over.gif) repeat-x;
+	font-weight: 700;
+}
+/******************表格加载数据时的容器样式*********************/
+.grid-loading-container {
+	overflow: hidden;
+	text-align: center;
+	display: table;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	background: #DBD1CE;
+	filter: alpha(opacity = 60); /**IE**/
+	-moz-opacity: 0.6; /**火狐**/
+	-khtml-opacity: 0.6;
+	opacity: 0.6; /**谷歌**/
+}
+
+.grid-loading-container a {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.grid-loading-container a {
+	color: #0064B1;
+	text-decoration: none;
+	outline: none;
+	blr: expression(this.onFocus = this.blur ());
+}
+
+*+html .grid-loading-container a {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+}
+
+* html .grid-loading-container a {
+	position: absolute;
+	top: 51%;
+	text-align: center;
+	display: inline-block;
+}
+
+*+html .grid-loading-container a img {
+	position: relative;
+	top: -50%;
+	left: -50%;
+}
+
+* html .grid-loading-container a img {
+	position: relative;
+	top: -50%;
+	left: -50%;
+}
+
+.grid-loading-container a:hover {
+	cursor: wait;
+}
+
+.grid-loading-container a img {
+	border: none;
+}
+/*在火狐下显示边框，ie下不显示*/
+@-moz-document url-prefix() { 
+	.grid-header-table td{border-right:#c90001 solid 1px;} 
+}
+@-moz-document url-prefix() { 
+	.headerresizer {border-right: 0px !important;} 
+}

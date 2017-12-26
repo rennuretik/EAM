@@ -1,0 +1,18 @@
+/* CSS Document */
+@charset "utf-8";
+
+.toolbar {
+	padding: 3px 5px 1px 5px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.toolbar-bg {
+	border-bottom:1px solid #b7d5e3;
+	background:#cee8f3;
+	zoom: 1;
+}
+
+.toolbar a:hover {
+	text-decoration: none;
+}

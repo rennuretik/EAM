@@ -1,0 +1,122 @@
+.notabs-window {
+  position: absolute;
+  top: 90px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #fff;
+
+  .tabs-left {
+    position: fixed;
+    top: 90px;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    box-shadow: 3px 5px 20px #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+  }
+
+  .tabs-right {
+    padding-left: 220px;
+    .tabs-header {
+      height: 42px;
+      .tabs-nav{
+        display: inline-block;
+        float: left;
+      }
+      .data-serch {
+        display: inline-block;
+        float: right;
+        padding-top: 9px;
+        height: 42px;
+        .mg-hs-inp {
+          height: 28px;
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 20px;
+      .set-table {
+        margin-top: 10px;
+        tr th {
+          border-top: none;
+        }
+      }
+      .head-unit {
+        display: inline-block;
+        float: right;
+      }
+    }
+    .ser-frst {
+      background: #fff;
+      padding: 20px 0;
+    }
+    .resu-tab {
+      margin-top: 20px;
+      background: #fff;
+      padding: 1px;
+      .tab-header {
+        height: 60px;
+        background: #f6f7f9;
+        padding: 17px 20px;
+      }
+    }
+    .data-hov {
+      position: fixed;
+      right: 10px;
+      top: 180px;
+      li {
+        float: none;
+        cursor: pointer;
+        padding: 0;
+        background: none;
+        &:hover,&:focus {
+          background: #f6f6f6;
+          border-color: #ddd;
+        }
+        .active {
+          &:focus,&:hover {
+            border:none;
+          }
+        }
+        a {
+          color: #b0b3b9;
+          &:focus,&:hover {
+            color: #b0b3b9;
+          }
+        }
+      }
+    }
+    .crm-btn-common {
+      height: 26px;
+    }
+    .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+      border-color: #ddd;
+    }
+    .echarts-con {
+      width: 80%;
+
+      .piebox {
+        width: 500px;
+        height: 250px;
+      }
+    }
+    .echarts-box {
+      width: 680px;
+      height: 450px;
+    }
+
+
+    .product-chi {
+      width: 100px;
+      display: none;
+
+      li {
+        border: 1px solid #eee;
+        padding:10px 5px;
+        background: #eee;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}

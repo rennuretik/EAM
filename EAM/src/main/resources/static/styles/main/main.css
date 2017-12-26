@@ -1,0 +1,276 @@
+/*
+ * Zjrcu.com Inc.
+ * Copyright (c) 2016-2016 All Rights Reserved.
+ */
+
+body{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	font-family:"Microsoft YaHei";
+}
+
+.header{
+	background: #333;
+	border-bottom:3px solid #f39c12 ;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	box-sizing: border-box;
+}
+.user{
+	height:22px;
+	float:right;
+	margin-top:17px;
+	margin-right:10px;
+}
+.logo{
+	float:left;
+}
+.logo img{
+	height:50px;
+}
+.hsize{
+	float:left;
+	border-right:2px solid #1a1a1a;
+	padding:0 20px;
+}
+.head_icon{
+	background:url(../../images/main/header.png) no-repeat;
+	cursor:pointer;
+}
+.menuicon{
+	background-position: 0 -60px;
+	height:26px;
+	width:27px;
+	float:left;
+	margin:12px 20px;
+}
+.menuicon_check{
+	background-position: -36px -60px;
+}
+.home{
+	background-position: 0 0;
+	width:22px;
+	height:22px;
+	margin:0 auto;
+	display:inline-block;
+	vertical-align: middle;
+}
+.fast{
+	height:22px;
+	float:left;
+	margin-top:17px;
+	padding-left:500px;
+}
+
+.home_check{
+	background-position: 0 -32px;
+}
+
+
+.freshicon{
+	background-position: -33px 0;
+	width:22px;
+	height:22px;
+	margin:0 auto;
+	display:inline-block;
+	vertical-align: middle;
+
+}
+.freshicon_check{
+	background-position: -33px -33px;
+}
+.searchicon{
+	background-position: -62px 0;
+	width:22px;
+	height:22px;
+	margin:0 auto;
+	display:inline-block;
+	vertical-align: middle;
+}
+.font_size{
+	color:#939498;
+	font-size:18px;
+	font-style:normal;
+	padding-left:5px;
+}
+
+.searchicon_check{
+	background-position: -62px -31px;
+}
+.hbsize{
+	float:left;
+	border-right:2px solid #1a1a1a;
+	padding:0 10px;
+	cursor: pointer;
+}
+.personicon{
+	background-position: -92px 0;
+	width:22px;
+	margin-left:10px;
+	display:inline-block;
+	height:22px;
+	float:left
+}
+.personicon_check{
+	background-position: -92px -33px;
+}
+
+.husername{
+	font-size:18px;
+	color:#939498;
+	float:left;
+}
+.downicon{
+	background-position: -80px -61px;
+	height:6px;
+	width:11px;
+	float:left;
+	display:inline-block;
+	margin-top:11px;
+	margin-left:10px;
+}
+.downicon_check{
+	background-position: -101px -81px;
+}
+.seticon{
+	background-position: -121px 0;
+	height:22px;
+	width:22px;
+	float:left;
+	display:inline-block;
+}
+.seticon_check{
+	background-position: -121px -30px;
+}
+.logouticon{
+	background-position: -151px 0;
+	height:22px;
+	width:22px;
+	float:left;
+	display:inline-block;
+}
+.logouticon_check{
+	background-position: -151px -33px;
+}
+.noborder{
+	border:none;
+}
+
+.check{
+	color:#ff9801
+}
+.search_box{
+	width:500px;
+	height:130px;
+	background:#52555c;
+	position:absolute;
+	top:110px;
+	z-index: 9999;
+	text-align: center;
+	color:#fff;
+	border-radius: 5px;
+}
+.search_box input{
+	margin-top:30px;
+	margin-left:10px;
+	width:300px;
+}
+.search_box button{
+	outline: none;
+	border:none;
+	margin-top:30px;
+	padding:3px 10px;
+	border-radius: 3px;
+	color:#fff;
+	cursor: pointer;
+}
+.search_box .button_bar{
+	width:400px;
+	text-align: center;
+	height:80px;
+	margin: 0 auto;
+}
+.search_box .ok{
+	margin-right:60px;
+	background: #f49c14;
+}
+.search_box .cancel{
+	background: #3399db;
+}
+.hide{
+	display:none
+}
+.search_result{
+	width:98%;
+	margin:0 auto;
+}
+.search_result img{
+	height:200px;
+}
+.search_detail{
+	width:20.5%;
+	border:1px solid #ddd;
+	padding:10px;
+	float:left;
+	margin:20px 2%;
+	text-align:center;
+	height:230px;
+	border-radius: 5px;
+	color:#666;
+}
+li{
+	list-style: none;
+}
+.result_size{
+	height:20px;
+	line-height:20px;
+}
+.menua{
+	position: absolute;
+	display:none;
+	z-index: 999;
+	opacity:.9;
+	margin-left:20px;
+	top:47px;
++right:70px;
+}
+.info{
+	margin-left:6px;
+}
+.menu-list{
+	margin-left:6px;
+}
+.menua ul{
+	text-align: center;
+	border-bottom: none;
+	background: #262d40;
+}
+.menua li{
+	border-bottom: 1px solid #488fd2;
+	height:30px;
+	line-height:30px;
+	padding: 0 25px;
+	position:relative;
+}
+.down{
+	margin-right:15px;
+}
+.up{
+	height:0;
+	width:0;
+	border-style: solid;
+	border-width:8px;
+	border-color:transparent transparent #262d40 transparent;
+	margin-left:10px;
+}
+.menua li a{
+	color:#fff;
+}
+.menua li:hover{
+	background: #488fd2;
+}
+.username1{
+	color:#f44336;
+}

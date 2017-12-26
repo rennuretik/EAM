@@ -1,0 +1,104 @@
+.clientInfoSum {
+  background: #fff;
+  color: @crm-clientInfo-color;
+
+  //顶部客户信息
+  .crm-clientInfo {
+    padding: 10px 10px 20px 10px;
+    span {
+      float: left;
+    }
+    .crm-clientInfo-btn {
+      width: 102px;
+      height: 20px;
+      line-height: 20px;
+      float: right;
+      display: inline-block;
+      background: @crm-btn-bg-red;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  //tabs
+  .crm-client-tabs {
+    margin: 20px 10px 0 10px;
+    height: 30px;
+    li a {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-bottom: 10px;
+      border-bottom: 2px solid @crm-clientInfo-color;
+      color: @crm-clientInfo-color;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: @crm-clientInfo-tabs-colorHover;
+        border-bottom: 2px solid @crm-clientInfo-tabs-colorHover;
+      }
+    }
+    li.client-active a {
+      color: @crm-clientInfo-tabs-colorHover;
+      border-bottom: 2px solid @crm-clientInfo-tabs-colorHover;
+    }
+  }
+
+  //客户信息表格内容部分
+  .crm-client-table {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    .crm-table {
+      width: 100%;
+      border-collapse: collapse;
+      color: @body-fontcolor;
+    }
+    .crm-table td {
+      border: 2px solid @crm-clientInfo-table-borderColor;
+      padding: 5px;
+    }
+    .crm-table .crm-td-key {
+      width: 3%;
+      text-align: right;
+    }
+    .crm-table .crm-td-value {
+      width: 5%;
+      text-align: left;
+    }
+    .crm-vas {
+      display: block;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+    }
+    .crm-num {
+      float: right;
+    }
+    .crm-look {
+      color: @body-fontcolor;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.crm-clientcontainer {
+  position: absolute;
+  top: 95px;
+  bottom: 4px;
+  width: 100%;
+}
+
+.crm-iframe {
+  width: 100%;
+  min-width: 994px;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #fff;
+}

@@ -1,0 +1,39 @@
+// 客户信息概况页面样式
+
+.client-info-sum{
+  width: 100%;
+  padding: 10px;
+  &>.panel{
+    border: none;
+    .panel-title{
+      font-weight: bold;
+    }
+  }
+  .table-scroll-container{
+    margin-top: -1px;
+    overflow-x: auto;
+    &>table{
+      white-space: nowrap;
+      margin: 0;
+      font-size: 14px;
+      .text-left{
+        color: @font-color-1;
+        min-width: 50px;
+        &:hover{
+          background: #88d8d9;
+          color: #fff;
+        }
+        a {
+          color: #4ba5ec;
+          cursor: pointer;
+        }
+      }
+      .text-right{color: #b0b4be }
+
+      .cli-star {
+        color: #e9593e;
+      }
+    }
+  }
+
+}

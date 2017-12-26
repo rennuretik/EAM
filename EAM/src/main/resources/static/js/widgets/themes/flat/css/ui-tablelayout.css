@@ -1,0 +1,41 @@
+.table-layout {
+	white-space: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;
+	color: -webkit-text; /*颜色引用父标签的颜色*/
+	text-align: -webkit-auto; /*文本对齐方式引用父标签的*/
+	table-layout: fix;
+	border-color: #99BBE8;
+	border-style: solid;
+}
+
+.table-layout {
+	border-collapse: separate;
+	border-spacing: 0;
+	display: table;
+}
+
+.table-layout tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.table-layout tbody tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.table-layout tbody td,th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+.table-layout tbody td.layout {
+	margin: 0;
+	padding: 0;
+}

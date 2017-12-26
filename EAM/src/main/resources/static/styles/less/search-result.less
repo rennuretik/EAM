@@ -1,0 +1,38 @@
+// 搜索结果
+.search-result-container{
+  padding: 0 10px;
+  width: 100%;
+  background: #fff;
+  table{font-size: 12px;}
+  //td.search-control{
+  //  text-align: center;
+  //}
+  .flow-client,
+  .scan-client,
+  .fs-client{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .flow-client{
+    background: url("../../images/xin22.png") no-repeat center;
+  }
+  .flow-client.active{
+    background: url("../../images/xin2.png") no-repeat center;
+  }
+  .scan-client{
+    background: url("../../images/icon_cd.png");
+    &:hover{
+      background: url("../../images/icon_cd_active.png");
+    }
+  }
+  .fs-client.fen{
+    background: url("../../images/fen.png");
+  }
+  .fs-client.shen{
+    background: url("../../images/shen.png");
+  }
+}

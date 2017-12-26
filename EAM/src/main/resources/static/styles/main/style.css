@@ -1,0 +1,15 @@
+body{
+    background: #fbfbfb;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+#content{
+    margin: 0 auto;
+}
+#content {
+    background: url("../../images/main/tu.png") no-repeat center;
+    width: 552px;
+    height: 300px;
+    margin: 50px auto;
+}

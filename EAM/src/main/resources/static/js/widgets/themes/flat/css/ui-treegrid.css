@@ -1,0 +1,45 @@
+/* CSS Document */
+.tree-expanded,
+.tree-collapsed,
+.tree-folder,
+.tree-file,
+.tree-checkbox,
+.tree-folder-open,
+.tree-indent {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  vertical-align: top;
+  overflow: hidden;
+}
+.tree-expanded {
+  background: url(../images/grid/tree_icons.png) no-repeat -18px 0px;
+}
+.tree-expanded:hover {
+  background: url(../images/grid/tree_icons.png) no-repeat -50px 0px;
+}
+.tree-collapsed {
+  background: url(../images/grid/tree_icons.png) no-repeat 0px 0px; 
+}
+.tree-collapsed:hover {
+  background: url(../images/grid/tree_icons.png) no-repeat -32px 0px;
+}
+.tree-folder {
+  background: url(../images/grid/tree_icons.png) no-repeat -208px 0;
+}
+.tree-folder-open {
+  background: url(../images/grid/tree_icons.png) no-repeat -224px 0;
+}
+.tree-file {
+  background: url(../images/grid/tree_icons.png) no-repeat -240px 0;
+}
+.tree-title {
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 18px;
+}

@@ -1,0 +1,55 @@
+.crm-nav-gmenu{
+    display:none;
+    position: absolute;
+    left:0;
+    top:80px;
+    z-index: 9999;
+}
+.gmenu-first{
+    height:30px;
+    background:#727bca;
+    opacity:.8
+}
+.crm-nav-gmenu>li{
+    position:relative;
+}
+.crm-menu-title{
+    display:block;
+    height:50px;
+    line-height:50px;
+    background:#727bca;
+    width:260px;
+    text-align: center;
+    color:#fff;
+    opacity:.9
+}
+.crm-menu-item{
+   position:absolute;
+    left:255px;
+    top:0px;
+    display:none;
+    z-index:888;
+}
+.crm-menu-item li{
+    background:#727bca;
+    width:280px;
+    text-align: center;
+    height:50px;
+    line-height:50px;
+    opacity:.9
+}
+.crm-menu-item li a{
+    color:#fff;
+    display:block;
+    width:100%;
+}
+.crm-menu-title:hover,.crm-menu-item li:hover,.crm-menu-title-hover{
+    background:#5b61bf;
+    color:#fff;
+}
+.crm-menu-x{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/icon_HomeClose.png")
+}

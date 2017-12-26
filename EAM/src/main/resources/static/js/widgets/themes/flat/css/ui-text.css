@@ -1,0 +1,31 @@
+/*
+ * Sunyard.com Inc.
+ * Copyright (c) $year-2018 All Rights Reserved.
+ */
+
+/*文本框样式，校验信息*/
+.text-container {
+	font-size: 12px;
+	white-space: nowrap;
+	/*overflow:hidden;*/
+}
+
+.text-container .field-label {
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+
+.text-container .text {
+	margin-left: 5px;
+	border: 0px;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12px;
+	background: #fff;
+	overflow: hidden;
+	padding: 0;
+}

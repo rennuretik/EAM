@@ -1,0 +1,79 @@
+.ui-menu{
+	position:absolute;
+	top:-9999px;
+	left:-9999px;
+}
+.ui-menu ul{
+	margin:0;
+	list-style-type:none;
+	font:12px/1.5 \5fae\8f6f\96c5\9ed1;/*字体样式*/
+	float:left;
+	border:1px solid #99bbe8;
+	background:#e8eef8 url(../icons/line.png) 24px 0 repeat-y !important;
+	padding:2px;
+}
+.ui-menu ul li{
+	margin:0;
+	float:left;
+	clear:both;
+	height:24px;
+	cursor:pointer;
+	line-height:24px;
+	white-space:nowrap;
+	padding:0 30px 0 3px;
+	user-select: none;/*通用禁止选中*/
+	-o-user-select: none;/*IE10禁止选中*/
+	-ms-user-select: none;/*IE禁止选中*/
+	-moz-user-select: -moz-none;/*火狐禁止选中*/
+	-webkit-user-select: none;/*谷歌禁止选中*/
+}
+.ui-menu ul li.menu-sep {
+	margin: 3px 0 3px 24px;/*外边距（上右下左）*/
+	line-height: 2px;/*行高*/
+	height:2px;
+	font-size: 2px;
+	border-bottom:1px solid #fff;
+	cursor:default;
+	_display:inline;
+}
+.ui-menu ul li img{
+	vertical-align:middle;
+	margin:0;
+	_margin-top:2px;
+}
+.ui-menu ul li input[type="checkbox"] {
+	vertical-align:middle;
+	margin:0;
+}
+.ui-menu ul li span{
+	margin-left:10px;
+	user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+}
+.ui-menu ul li.sub{
+	background-repeat:no-repeat;
+	
+	
+}
+.ui-menu ul li.active{
+	background-color:#f1f3f6;
+	border-radius:3px;/*圆角*/
+	border:1px solid #aecff7;
+	height:22px;
+	line-height:22px;
+	background-position:right -8px;/*背景图片的位置*/
+	padding:0 29px 0 2px;/*内边距（上右下左）*/
+}
+.ui-menu ul ul{
+	display:none;
+	position:absolute;
+}
+.ui-menu li.menuitem-disabled {
+	color: #ccc;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}

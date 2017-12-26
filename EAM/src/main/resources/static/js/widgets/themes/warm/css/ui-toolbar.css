@@ -1,0 +1,19 @@
+/* CSS Document */
+@charset "utf-8";
+
+.toolbar {
+	padding: 4px 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #ffce8f;
+}
+
+.toolbar-bg {
+	border-bottom: 1px solid #c90001;
+	/*background: url("../images/panel/title_bg.gif") repeat-x;*/
+	zoom: 1;
+}
+
+.toolbar a:hover {
+	text-decoration: none;
+}

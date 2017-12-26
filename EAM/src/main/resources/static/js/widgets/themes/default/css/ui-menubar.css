@@ -1,0 +1,10 @@
+/* CSS Document */
+.menubar {
+	width: 100%;
+	padding: 3px 0 1px;
+	background: #f7f7f7;
+	font-family: helvetica, tahoma, verdana, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 21px;
+}

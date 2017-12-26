@@ -1,0 +1,154 @@
+.c-manager-arch-sum {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .c-search-condition {
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    background: #fff;
+
+    .cm-name {
+      position: relative;
+      #cm-name-list {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        background: #fff;
+        z-index: 9;
+        display: none;
+        box-shadow: 2px 2px 5px rgba(152, 152, 152, 0.3);
+        border-radius: 5px;
+        li.list-group-item {
+          cursor: pointer;
+          &:hover {
+            background: @main-color-1;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  .c-search-result {
+    width: 100%;
+    background: #fff;
+    font-size: 12px;
+    .tablist {
+      height: 42px;
+      overflow: hidden;
+      li > a {
+        input{
+          border: none;
+          width: 60px;
+        }
+        .remove {
+          color: red;
+          margin-left: 5px;
+          visibility: hidden;
+          cursor: pointer;
+        }
+        &:hover {
+          .remove {
+            visibility: visible;
+          }
+        }
+      }
+      li > button {
+        margin-top: 6px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .tab-content {
+      table{
+        td>span.red-text{color: red;}
+        td>span.green-text{color: green;}
+        td>span.blue-text{color: blue;}
+      }
+      .empty-container {
+        padding: 20px;
+        text-align: center;
+      }
+      .search-result-table {
+        font-size: 12px;
+        .glyphicon-arrow-up {
+          color: red
+        }
+        .glyphicon-arrow-down {
+          color: green
+        }
+        .table-choose {
+          padding: 2px 5px;
+        }
+      }
+    }
+
+    // 管户客户指标
+    .c-target {
+      button {
+        margin: 0 3px;
+        padding: 0 2px;
+      }
+    }
+
+  }
+
+  .arch-charts {
+    width: 100%;
+    height: 300px;
+  }
+
+  .target-choose-modal {
+    width: 100%;
+    padding: 10px;
+    table label {
+      margin-right: 10px;
+      input {
+        margin-right: 5px;
+      }
+    }
+  }
+  .int02 {
+    /*background: url("../../images/jump05.png") right 5px center no-repeat;*/
+    background: url("../../images/jump05.png") no-repeat 90%;
+    width: 88px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    border: 1px solid #edf0f5;
+    text-indent: 5px;
+    cursor: pointer;
+    color: #83838d;
+    position: relative;
+  }
+
+  .select-option {
+    display: none;
+    background: #fff;
+    border: 1px solid #edf0f5;
+    position: absolute;
+    top: 22px;
+    left: 93px;
+    cursor: pointer;
+    padding-top: 5px;
+
+  }
+
+  .int03 {
+    width: 88px;
+    height: 22px;
+    text-indent: 5px;
+    cursor: pointer;
+    color: #83838d;
+    margin: 0;
+  }
+
+  .tishi {
+    color: #b2b3b7;
+  }
+
+}

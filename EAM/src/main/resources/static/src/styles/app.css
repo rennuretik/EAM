@@ -1,0 +1,521 @@
+/*
+ * 皮肤
+ */
+/*
+ *@皮肤变量less文件
+ **/
+/*
+ * bootstrap补充，修正bootstrap的bug
+ */
+/*
+ * 修正bootstrap
+ */
+.form-inline .btn-group-sm {
+  display: inline-block;
+}
+.btn-sm {
+  width: 120px;
+  margin-right: 10px;
+}
+/*基础样式*/
+/*
+ * base.less
+ * 定义 html 与 body 标签的样式， 包括字体和字体大小等……
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background: #edf0f5;
+  font-family: Arial, 'Microsoft YaHei', 'SimSun';
+}
+ul li {
+  list-style: none;
+}
+/*表格里面的删除功能链接的样式*/
+.data-del {
+  margin-left: 10px;
+}
+/*删除提示图表*/
+.msg-prompt {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+/*页面错误提示信息*/
+.error-msg {
+  position: fixed;
+  top: 81px;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
+  background-color: #f5eab0;
+  border: none;
+}
+/*无返回数据提醒*/
+.no-data {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: #fff;
+  font-size: 18px;
+  color: #b0b3b9;
+}
+.no-data i {
+  font-size: 32px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+/*
+ * structure.less
+ * 定义主体结构的样式
+ */
+header.header {
+  width: 100%;
+}
+section.main {
+  width: 100%;
+  padding-top: 20px;
+}
+section.main .wlk-top {
+  background: #fff;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+section.main .wlk-top label {
+  padding-top: 7px;
+  color: #81848b;
+  font-weight: normal;
+}
+@media (max-width: 992px) {
+  section.main .wlk-top .btn-box {
+    margin-top: 10px;
+  }
+}
+section.main .wlk-bottom {
+  background: #fff;
+  padding: 1px;
+}
+section.main .wlk-bottom .query-operation {
+  height: 60px;
+  background: #f6f7f9;
+  padding: 18px 20px;
+}
+section.main .wlk-bottom .qurey-result {
+  padding: 0 20px;
+}
+section.main-fullscreen {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 15px;
+  padding-top: 20px;
+}
+section.main-fullscreen .container-fluid {
+  height: 100%;
+}
+section.main-fullscreen .container-fluid .wlk-grail {
+  height: 100%;
+  padding-left: 230px;
+  overflow: hidden;
+}
+section.main-fullscreen .container-fluid .wlk-grail .wlk-aside {
+  float: left;
+  width: 215px;
+  height: 100%;
+  margin-left: -100%;
+  position: relative;
+  left: -230px;
+  _left: 0;
+}
+section.main-fullscreen .container-fluid .wlk-grail .wlk-container {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+section.main-fullscreen .container-fluid > div.row,
+section.main-fullscreen .container-fluid > div > div {
+  height: 100%;
+}
+section.main-fullscreen-nonav {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 15px;
+  padding-top: 20px;
+}
+section.main-fullscreen-nonav .container-fluid {
+  height: 100%;
+}
+section.main-fullscreen-nonav .container-fluid .wlk-grail {
+  height: 100%;
+  padding-left: 230px;
+  overflow: hidden;
+}
+section.main-fullscreen-nonav .container-fluid .wlk-grail .wlk-aside {
+  float: left;
+  width: 215px;
+  height: 100%;
+  margin-left: -100%;
+  position: relative;
+  left: -230px;
+  _left: 0;
+}
+section.main-fullscreen-nonav .container-fluid .wlk-grail .wlk-container {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+section.main-fullscreen-nonav .container-fluid > div.row,
+section.main-fullscreen-nonav .container-fluid > div > div {
+  height: 100%;
+}
+/*头部*/
+.header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: url("../assets/images/top_bg.jpg") repeat-y center;
+  /*菜单按钮*/
+  /*logo部分*/
+}
+.header .nav-menu {
+  background: url("../assets/images/nav_menu.jpg") no-repeat;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+}
+.header .logo {
+  background: url("../assets/images/welkin.png") no-repeat left center;
+  margin-left: 20px;
+  width: 281px;
+  height: 80px;
+}
+.header .break-nav {
+  position: absolute;
+  top: 44px;
+  left: 143px;
+}
+.header .break-nav .breadcrumb {
+  color: #fff;
+}
+.header .break-nav .breadcrumb a {
+  color: #fff;
+}
+.header .opt-box {
+  padding-top: 27px;
+}
+.header .opt-box .search form {
+  display: inline-block;
+  position: relative;
+}
+.header .opt-box .search form input[type=text] {
+  width: 180px;
+  background: rgba(225, 225, 225, 0.3);
+  border: none;
+  border-radius: 20px;
+  padding: 4px 0px 4px 37px;
+  color: #fff;
+  outline: none;
+  margin-right: 20px;
+}
+.header .opt-box .search form .serch-img {
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  width: 20px;
+  height: 19px;
+  color: #fff;
+  font-size: 18px;
+}
+.header .opt-box .search form input[type=text]::focus {
+  border: none;
+}
+.header .opt-box .search form input[type=submit] {
+  display: none;
+}
+.header .opt-box .search form input[type=text]::-webkit-input-placeholder {
+  color: #fff;
+}
+.header .opt-box .search form input[type=text]::-moz-placeholder {
+  color: #fff;
+}
+.header .opt-box .btn-box {
+  display: inline-block;
+}
+.header .opt-box .btn-box a {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 17px;
+  padding: 8px 9px 2px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.header .opt-box .btn-box a:hover,
+.header .opt-box .btn-box a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.header .opt-box .btn-box a .iconfont {
+  color: #fff;
+  margin: 0;
+  line-height: 0;
+  font-size: 20px;
+}
+.header .opt-box .btn-box .user-settings {
+  display: inline-block;
+  color: #fff;
+}
+.header .opt-box .btn-box .user-settings ul {
+  background: #5ec2c7;
+  padding: 5px 10px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: absolute;
+  top: 53px;
+  left: -104px;
+}
+.header .opt-box .btn-box .user-settings ul li[role="presentation"] {
+  padding: 5px 0;
+  cursor: pointer;
+  word-spacing: 8px;
+  letter-spacing: 1px;
+}
+.header .opt-box .btn-box .user-settings ul li.divider {
+  margin: 0;
+}
+.header .opt-box .btn-box .msg-tip {
+  display: inline-block;
+  position: relative;
+}
+.header .opt-box .btn-box .msg-tip .new-msg {
+  position: absolute;
+  top: -14px;
+  right: -1px;
+  padding: 0px 9px;
+  background: #e9593e;
+  border-radius: 15px;
+  color: #fff;
+}
+.menu-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.root-menu .fist-menu,
+.child-menu .fist-menu,
+.child-parent-menu .fist-menu {
+  display: none;
+  z-index: 9999;
+  position: relative;
+}
+.root-menu .fist-menu .tree-menu,
+.child-menu .fist-menu .tree-menu,
+.child-parent-menu .fist-menu .tree-menu {
+  width: 80px;
+}
+.root-menu .fist-menu .tree-menu li,
+.child-menu .fist-menu .tree-menu li,
+.child-parent-menu .fist-menu .tree-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+.root-menu .fist-menu .tree-menu li:hover,
+.child-menu .fist-menu .tree-menu li:hover,
+.child-parent-menu .fist-menu .tree-menu li:hover,
+.root-menu .fist-menu .tree-menu li:focus,
+.child-menu .fist-menu .tree-menu li:focus,
+.child-parent-menu .fist-menu .tree-menu li:focus {
+  background: #f5f5f5;
+}
+.root-menu .fist-menu .tree-menu .active-li,
+.child-menu .fist-menu .tree-menu .active-li,
+.child-parent-menu .fist-menu .tree-menu .active-li {
+  background: #f5f5f5;
+}
+.root-menu .fist-menu .secod-menu,
+.child-menu .fist-menu .secod-menu,
+.child-parent-menu .fist-menu .secod-menu {
+  position: absolute;
+  left: 78px;
+  display: none;
+  z-index: 9999;
+}
+.root-menu .fist-menu .secod-menu .thid-menu,
+.child-menu .fist-menu .secod-menu .thid-menu,
+.child-parent-menu .fist-menu .secod-menu .thid-menu {
+  position: absolute;
+  left: 78px;
+  display: none;
+  z-index: 9999;
+}
+.ui-icon-bat_ico_docu {
+  background: url("../assets/images/icons/bat.png") !important;
+}
+.ui-icon-datastage_ico_docu {
+  background: url("../assets/images/icons/datasage.png") !important;
+}
+.ui-icon-chu_ico_docu {
+  background: url("../assets/images/icons/chu.png") !important;
+}
+.ui-icon-java_ico_docu {
+  background: url("../assets/images/icons/java.png") !important;
+}
+.ui-icon-exe_ico_docu {
+  background: url("../assets/images/icons/exe.png") !important;
+}
+.ui-icon-http_ico_docu {
+  background: url("../assets/images/icons/http.png") !important;
+}
+.ui-icon-kjb_ico_docu {
+  background: url("../assets/images/icons/kjb.png") !important;
+}
+.ui-icon-ktr_ico_docu {
+  background: url("../assets/images/icons/ktr.png") !important;
+}
+.ui-icon-shell_ico_docu {
+  background: url("../assets/images/icons/shell.png") !important;
+}
+.ui-icon-plan_ico_docu {
+  background: url("../assets/images/icons/plan.png") !important;
+}
+.ui-icon-serial_ico_close {
+  background: url("../assets/images/icons/serial.png") !important;
+}
+.ui-icon-serial_ico_open {
+  background: url("../assets/images/icons/serial.png") !important;
+}
+.ui-icon-parallel_ico_close {
+  background: url("../assets/images/icons/parallel.png") !important;
+}
+.ui-icon-parallel_ico_open {
+  background: url("../assets/images/icons/parallel.png") !important;
+}
+.menu-manage #menumanage-content > div,
+.menu-manage #menumanage-aside > div {
+  height: 100%;
+}
+.menu-manage .tree-search {
+  width: 95px;
+  height: 25px;
+}
+.menu-manage .tree-btn {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.menu-manage .tree-search-btn {
+  background: url(../assets/images/search.png) no-repeat center #44afd1;
+}
+.menu-manage .tree-unfold-btn {
+  background: url(../assets/images/spread.png) no-repeat center #49d3c6;
+}
+.menu-manage .tree-fold-btn {
+  background: url(../assets/images/combine.png) no-repeat center #49d3c6;
+}
+.menu-manage .tree-container {
+  padding-right: 15px;
+  position: relative;
+}
+.menu-manage .tree-container .tree-area {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: #fff;
+}
+.menu-manage .tree-container .fold-btn {
+  width: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background: #fff;
+  padding: 0;
+  outline: none;
+  color: #8d8d8d;
+}
+.menu-manage .tree-container .fold-btn:hover {
+  background: #e9e9e9;
+}
+.menu-manage .tree-container .fold-btn:active {
+  box-shadow: 0 0 5px #878787 inset;
+}
+.tsp .btn-ifm {
+  text-align: left;
+  position: relative;
+}
+.tsp .btn-ifm .caret {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tsp .dpn-tip {
+  display: inline-block;
+  text-align: left;
+}
+.tsp .row-ise {
+  margin-bottom: 15px;
+}
+.tsp .data-avtive {
+  background: #f5f5f5;
+}
+.modal-body .stree {
+  padding: 0 10px;
+  border-radius: 4px;
+}
+.modal-body .posDown {
+  position: absolute;
+  height: 200px;
+  margin: 0 10px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  top: 33px;
+  left: 0;
+  background: #fff;
+  z-index: 9999;
+}
+.modal-body .dpn-btn {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+}
+.modal-body .dpn-btn .crt-rgt {
+  position: absolute;
+  right: 10px;
+  top: 45%;
+}

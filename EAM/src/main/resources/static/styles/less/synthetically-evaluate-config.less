@@ -1,0 +1,232 @@
+.synthetically-evaluate-config {
+	width: 100%;
+	background: transparent;
+	padding: 20px 10px 10px 10px;
+	// 基本参数设置
+	.base-params-config {
+		width: 100%;
+		background: #fff;
+		padding: 10px;
+		.base-params-title {
+			background: #f2f2f3;
+			width: 100%;
+			height: 40px;
+			color: @font-color-1;
+			padding-top: 10px;
+			padding-left: 20px;
+			span {
+				background: #44afd1;
+				color: #fff;
+				margin-left: 20px;
+				font-size: 12px;
+				padding: 4px 10px;
+				border-radius: 2px;
+				cursor: pointer;
+			}
+			img {
+				padding: 7px;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+		}
+		// 运行频率设置
+		.opera-freq {
+			width: 100%;
+			height: 44px;
+			padding-top: 10px;
+			padding-left: 20px;
+			span {
+				margin-right: 100px
+			}
+			label {
+				margin: 0 0 0 20px;
+				cursor: pointer;
+			}
+			//input{display: none;}
+		}
+		// 客户等级设置
+		.client-level {
+			display: none;
+			padding: 0 20px;
+			table {
+				width: 100%;
+				thead {
+					font-size: 14px;
+					color: #b0b3b9;
+				}
+				tbody {
+					font-size: 14px;
+					color: #81848b;
+				}
+				th.width40,
+				td.width40 {
+					width: 40px;
+				}
+				th.width90,
+				td.width90 {
+					width: 90px;
+				}
+				th {
+					height: 40px
+				}
+				td {
+					height: 36px;
+					input {
+						height: 30px;
+						line-height: 30px;
+						width: 100%;
+						padding-left: 10px;
+						border: 1px solid #edf0f5;
+					}
+
+				}
+			}
+		}
+
+	}
+
+	// 评价内容设置
+	.evaluate-content-config {
+		width: 100%;
+		padding: 10px;
+		background: #fff;
+		margin-top: 20px;
+		.module-title {
+			height: 50px;
+			line-height: 50px
+		}
+		// 评价内容设置的内容
+		.ecc-container {
+			width: 100%;
+			overflow-x: auto;
+			background: #fff;
+			white-space: nowrap;
+			padding-bottom: 20px;
+			.e-panel {
+				border: 1px solid #f2f2f3;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 10px;
+				.e-panel-header {
+					width: 100%;
+					height: 42px;
+					line-height: 42px;
+					padding: 0 12px;
+					background: #f2f2f3;
+					border: 1px solid #fff;
+				}
+				.e-panel-body {
+					background: #fff;
+					width: 100%;
+					min-height: 200px;
+					border: 1px solid #fff;
+				}
+			}
+
+			// 评价项目
+			.evaluate-list {
+				ul{
+					padding: 14px 0;
+				}
+				li {
+					padding: 6px 12px;
+					cursor: pointer;
+				}
+				.second-list {
+					padding: 6px 24px;
+				}
+				li.active{
+					background: #7177c9;
+					color: #fff;
+				}
+			}
+			// 内容选择
+			.content-choose{
+				ul{
+					padding: 14px 0;
+					li{
+						padding: 6px 12px;
+						cursor: pointer;
+					}
+					li.active{
+						background: #7177c9;
+						color: #fff;
+					}
+				}
+			}
+			// 评价内容
+			.eva-content{
+				table{
+					margin-top: 14px;
+					img{cursor: pointer}
+					tr.active{background: #7177c9;color: #fff;}
+					th{
+						color: #b0b3b9;
+						padding-bottom: 20px
+					}
+					td,th{
+						padding: 0 12px;
+					}
+					td{
+						height: 36px;
+					}
+					input{width: 40px;padding: 0 10px;color: #81848b;}
+				}
+			}
+			// 内容选择
+			.content-choose2{
+				ul{
+					padding: 14px 0;
+					li{
+						padding: 6px 12px;
+						cursor: pointer;
+					}
+					li.active{
+						background: #7177c9;
+						color: #fff;
+					}
+				}
+			}
+			// 内容设置
+			.content-config{
+				table{
+					margin-top: 14px;
+					img{cursor: pointer}
+					th{
+						color: #b0b3b9;
+						padding-bottom: 20px
+					}
+					td,th{
+						padding: 0 12px;
+					}
+					td{
+						height: 36px;
+					}
+					input{width: 40px;padding: 0 10px;color: #81848b}
+				}
+			}
+		}
+
+		// 按钮组
+		.e-btn-group {
+			padding: 20px 0;
+			button {
+				border: none;
+				margin: 0 6px;
+				border-radius: 2px;
+				color: #fff;
+				width: 124px;
+				height: 40px;
+			}
+			.save-btn {
+				background: #49d3c6
+			}
+			.pub-btn {
+				background: #f6c028
+			}
+			.reset-btn {
+				background: #b0b3b9
+			}
+		}
+	}
+}

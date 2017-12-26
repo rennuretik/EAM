@@ -1,0 +1,137 @@
+
+.header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: @nav-bg-img repeat-y center;
+  //overflow: hidden;
+  /*菜单按钮*/
+  .nav-menu {
+    background: @nav-menu-btn no-repeat;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+  }
+  /*logo部分*/
+  .logo {
+    background: @nav-logo-img no-repeat left center;
+    margin-left: 20px;
+    width: 281px;
+    height: 80px;
+  }
+  .break-nav {
+	position: absolute;
+	top: 44px;
+	left: 143px;
+	.breadcrumb {
+	  color: #fff;
+	  a {
+		color: #fff;
+	  }
+
+	}
+  }
+  // 导航内搜索
+  .opt-box {
+    padding-top: 27px;
+    .search {
+      form {
+        display: inline-block;
+        position: relative;
+        input[type=text] {
+          width: 180px;
+          background: rgba(225, 225, 225, .3);
+          border: none;
+          border-radius: 20px;
+          padding: 4px 0px 4px 37px;
+          color: #fff;
+          outline: none;
+          margin-right: 20px;
+        }
+        .serch-img {
+          position: absolute;
+          top: 2px;
+          left: 11px;
+          width: 20px;
+          height: 19px;
+          color: #fff;
+          font-size: 18px;
+        }
+        input[type=text]::focus {
+          border: none
+        }
+        input[type=submit] {
+          display: none;
+        }
+        input[type=text]::-webkit-input-placeholder {
+          color: #fff;
+        }
+
+        input[type=text]::-moz-placeholder {
+          color: #fff;
+        }
+      }
+
+    }
+    //操作按钮
+    .btn-box {
+      display: inline-block;
+      a {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 17px;
+        padding: 8px 9px 2px;
+        margin: 0 10px 0 0;
+        display: inline-block;
+        cursor: pointer;
+        &:hover, &:focus {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        .iconfont {
+          color: #fff;
+          margin: 0;
+          line-height: 0;
+          font-size: 20px;
+        }
+      }
+      .user-settings {
+        display: inline-block;
+        color: #fff;
+        ul {
+          background: #5ec2c7;
+          padding: 5px 10px;
+          width: 200px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+          position: absolute;
+          top: 53px;
+          left: -104px;
+          li[role="presentation"] {
+            padding: 5px 0;
+            cursor: pointer;
+            word-spacing: 8px;
+            letter-spacing: 1px;
+          }
+          li.divider {
+            margin: 0;
+          }
+        }
+      }
+      .msg-tip {
+        display: inline-block;
+        position: relative;
+        .new-msg {
+          position: absolute;
+          top: -14px;
+          right: -1px;
+          padding: 0px 9px;
+          background: #e9593e;
+          border-radius: 15px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

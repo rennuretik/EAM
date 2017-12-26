@@ -1,0 +1,25 @@
+/* CSS Document */
+.gridlayout-container {
+	border: 1px solid #99BBE8;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/*margin-left:-2px;*/
+}
+
+.gridlayout-container-noborder {
+	border: 0;
+}
+
+.gridlayout-container .gridlayout-item {
+	float: left;
+	overflow: hidden;
+}
+
+.gridlayout-clear {
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	width: 0;
+	font-size: 0;
+	line-height: 0;
+}

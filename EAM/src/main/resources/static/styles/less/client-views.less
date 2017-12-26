@@ -1,0 +1,165 @@
+// 内层tabs带侧边栏页面样式(如：客户基本信息)
+
+.client-views {
+  position: relative;
+  min-height: 650px;
+  .views-aside {
+    position: absolute;
+    width: 200px;
+    background: #fff;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+    z-index: 7;
+    &:hover {
+      ul.nav.views-ul {
+        .pack-up {
+          display: block
+        }
+      }
+    }
+    ul.nav.views-ul {
+      padding-top: 20px;
+      position: relative;
+      width: 183px;
+      min-height: 300px;
+      box-shadow: 3px 5px 20px #d6d6d6;
+      border-right: 1px solid #d6d6d6;
+      .pack-up {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: -16px;
+        top: 80px;
+        z-index: 9;
+        width: 16px;
+        border-top: 1px solid #d6d6d6;
+        border-right: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        border-radius: 0 5px 5px 0;
+        height: 60px;
+        line-height: 60px;
+        color: @font-color-1;
+        background: #fff;
+      }
+      li {
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all .5s;
+        padding: 0;
+        margin: 0;
+        a {
+          margin: 0;
+          border: none;
+          border-radius: 0;
+        }
+        a:hover {
+          background: #f5f5f5;
+          color: #81848b;
+          border: none;
+          border-radius: 0;
+        }
+      }
+      li.active {
+        background: @main-color-1;
+        color: #fff;
+        a {
+          background: @main-color-1;
+          color: #fff;
+          border: none;
+          border-radius: 0;
+        }
+      }
+    }
+    .nav > li > a {
+      color: #81848b;
+      text-align: center;
+      &:hover, &:focus {
+        background: #727AC6;
+        color: #fff;
+      }
+    }
+
+    // 持有产品特别样式
+    .list-group.prolist {
+      display: none;
+      .list-group-item {
+        text-align: center;
+        padding: 5px;
+        background: #f2f2f2;
+      }
+    }
+
+  }
+  .views-content {
+    padding-left: 220px;
+    background: #fff;
+    position: relative;
+    min-height: 100%;
+    .client-content {
+      padding: 20px 20px 20px 0;
+      background: #fff;
+    }
+  }
+}
+
+.hold-products {
+  & > div.first-btngroup {
+    display: block;
+    button {
+      margin-bottom: 15px;
+    }
+
+    button.boolActive{
+      height: 60px;
+    }
+    button.bollActive-red{
+      background: #f2dede;
+    }
+    button.bollActive-blue{
+      background: #afe7ff;
+    }
+  }
+  & > div {
+    display: none;
+  }
+}
+
+.hold-products-nav {
+  .views-aside ul.nav.views-ul li.active a{
+    background: #f2f2f2 ;
+    color: @font-color-1 ;
+  }
+
+  .views-aside ul.nav.views-ul li.active{
+      background: #f2f2f2 ;
+      color: @font-color-1 ;
+  }
+}
+
+.ckze-img{
+  border: 1px solid #49d3c6;
+  width: 400px;
+  margin: 20px auto;
+  border-radius: 4px;
+
+  .dqye{
+    font-size: 26px;
+    color: #44afd1;
+    font-weight: bold;
+  }
+
+  .txt-one{
+    color: #7177c9;
+  }
+  .txt-two{
+    color: #e9593e;
+  }
+  .txt-three{
+    color: #46d36e;
+  }
+  .txt-four{
+    color: #d3c169;
+  }
+}

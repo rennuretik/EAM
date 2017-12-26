@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>教务辅助管理系统主界面</title>
+    #set($breadcrumb="<li>教务辅助管理系统主界面</li><li>表单管理</li>")
+    #parse("common/top-share-code.vm")
+    <link rel="stylesheet" href="${rc.contextPath}/libs/font-welkin/css/iconfont.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet"
+          href="${rc.contextPath}/libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/bootstrap-select/1.12.1/css/bootstrap-select.css"/>
+    <link rel="stylesheet" href="${rc.contextPath}/libs/animate/animate.min.css">
+    <link rel="stylesheet" href="${rc.contextPath}/src/styles/app.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/stree/ui-tree.css">
+    <link rel="stylesheet" href="${rc.contextPath}/js/widgets/themes/default/css/ui-tree.css">
+    <link type="text/css" href="${rc.contextPath}/styles/menu-manager.css" rel="stylesheet"/>
+</head>
+<body>
+    #parse("common/page-header-nav.vm")
+<div class="crm-body">
+    <div class="query-1-tit">
+    #* <p class="tit-q1">菜单管理:</p>*#
+    </div>
+    <div class="absolute-container">
+        <div class="client-views">
+            <div class="views-nav">
+                <div class="left_tree content2" id="lt">
+                    <div class="d_header">
+                        <input type="text" value="请输入关键字" class="tree_search" id="search-menu"
+                               onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
+                               onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999"/>
+
+                        <div class="d_icon">
+                            <a href="#" class="d_icon1 d_search"></a>
+                            <a href="#" class="d_icon2 d_spread"><span></span></a>
+                            <a href="#" class="d_icon2 d_combine"><span></span></a>
+                        </div>
+                    </div>
+                    <div class="tree_content clearfix tree_box">
+                        <input id="menuId" name="menuId" type="hidden">
+                        <input id="menuName" name="menuName" type="hidden">
+
+                        <div class="tree_content clearfix">
+                            <!--左侧菜单树-->
+                            <ul id="menuTree" class="ztree clearfix"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="views-content">
+                <div class="right_table content2 " id="rm">
+                    <div class="query-operation">
+                        <input type="submit" value="一键排课" id="operate-btn1" class="operate-btn1"/>
+                        <input type="submit" value="按班级查询课表" id="operate-btn2" class="operate-btn2"/>
+                        <input type="submit" value="按老师查询课表" id="operate-btn3" class="operate-btn2"/>
+                        <input type="submit" value="按教室查询课表" id="operate-btn4" class="operate-btn2"/>
+                        <input style="float:right;" type="submit" value="清空所有教学计划" id="operate-btn5" class="operate-btn1"/>
+                    </div>
+                    <div class="menu_table">
+                        <table>
+                            <tbody id="tbody">
+##                            <tr>
+##                                <td><h4><strong>时间/星期</strong></h4></td>
+##                                <td><h4><strong>星期一</strong></h4></td>
+##                                <td><h4><strong>星期二</strong></h4></td>
+##                                <td><h4><strong>星期三</strong></h4></td>
+##                                <td><h4><strong>星期四</strong></h4></td>
+##                                <td><h4><strong>星期五</strong></h4></td>
+##                            </tr>
+##
+##                            <tr>
+##                                <td><h4><strong>第一节</strong></h4></td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</br>
+##                                    <strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)
+##                                </td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                            </tr>
+##                            <tr>
+##                                <td><h4><strong>第二节</strong></h4></td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</br>
+##                                    <strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)
+##                                </td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                            </tr>
+##                            <tr>
+##                                <td><h4><strong>第三节</strong></h4></td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</br>
+##                                    <strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)
+##                                </td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                            </tr>
+##                            <tr>
+##                                <td><h4><strong>第四节</strong></h4></td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</br>
+##                                    <strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)
+##                                </td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                                <td><strong>数据库技术</strong></br>0001班</br>敬亭111</br>张国富(1-6周)，苏造品(7-8周)</td>
+##                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <!--收缩箭头-->
+            <div class="shousuo_arrow content2 " id="sy">
+                <a class="left_arrow" id="lre"><span></span></a>
+                <a class="right_arrow" id="lre"><span></span></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--排课弹出框-->
+<div id="arrange" class="modal-modify modal-planadd" style="display: none;">
+    <div class="modal-body">
+        <label class="control-label .col-xs-12">确定重新排课？</label>
+    </div>
+</div>
+<!--清空教学计划弹出框-->
+<div id="clear" class="modal-modify modal-planadd" style="display: none;">
+    <div class="modal-body">
+        <label class="control-label .col-xs-12">确定清空教学计划？</label>
+    </div>
+</div>
+<input type="hidden" id="contextPath" value="${rc.contextPath}">
+<input id="baseUri" type="hidden" value="${rc.contextPath}/plugin/${pluginName}/${pluginVersion}"/>
+    #parse("common/bottom-share-code.vm")
+<script src="${rc.contextPath}/libs/layer/layer.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="${rc.contextPath}/libs/stree/ztree.js"></script>
+<script src="${rc.contextPath}/libs/stree/stree.js"></script>
+<script src="${rc.contextPath}/src/js/main.js"></script>
+</body>
+</html>

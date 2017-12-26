@@ -1,0 +1,99 @@
+@import "skin";
+/**
+  * combSearch 样式
+  */
+.crm-combSearch{
+  background: #fff;
+  height: auto;
+  .crm-search-form{
+    width: 100%;
+    form{
+      .crm-form-three{
+        width: 974px;
+        margin:  0 auto;
+        padding: 16px 0;
+        text-align: center;
+        /*button{
+          margin: 0 32px;
+        }*/
+      }
+      .crm-form-zero{
+        background: #fff;
+        .crm-func-bar{
+          padding-top: 10px;
+          width: 974px;
+          height: 40px;
+          margin: 0 auto;
+          text-align: center;
+
+          .dropdown{display: inline-block;button{background: transparent;border: none;}}
+          .dropdown-menu{padding: 0;p{padding: 5px;cursor: pointer;margin: 0;&:hover{background: @crm-clientInfo-tabs-colorHover;color: #ccc}}}
+          // 客户星级
+          .crm-clientStar-menu{
+            label{width: 100%;}
+            input[type=checkbox]{
+              margin: 0 5px 0 0;
+              height: 16px;
+              vertical-align: middle;
+            }
+            button{width: 100%;padding: 5px;&:hover{background: @crm-clientInfo-tabs-colorHover;color: #ccc}}
+          }
+          // 业务品种
+          .crm-businessType-menu{
+            width: 200px;
+            span{display: inline-block;width: 70px;}
+            input{margin: 0 5px 0 20px;height: 16px;vertical-align: middle;}
+            button{width: 100%;padding: 5px 0;&:hover{background: @crm-clientInfo-tabs-colorHover;color: #ccc;}}
+          }
+          // 区间筛选
+          .crm-rangeChoose-menu{
+            width: 220px;
+            p{height: 36px;}
+            span{display:inline-block;width: 70px;}
+            input{margin: 0;vertical-align: middle}
+            input[type=checkbox]{height: 16px;}
+            input[type=text]{
+              width: 50px;
+            }
+            button{width: 100%;border: none;
+              padding: 5px;
+              &:hover{background: @crm-clientInfo-tabs-colorHover;color: #fff}
+            }
+          }
+          // 常用组合
+          .crm-awaysChoice-menu{
+            .aways-remove{
+              float: right;
+              margin-top: 1px;
+            }
+          }
+        }
+        // 结果渲染
+        .crm-condRes{
+          width: 974px;
+          margin: 0 auto;
+          .crm-conditionResult{
+            float: left;
+            color: #333;
+            border: 1px solid #c0c0c0;
+            background: #e2e2e2;
+            margin-right: 8px;
+            padding: 0;
+            span{
+              background: transparent;
+              padding: 2px 5px;
+              margin: 2px;
+              float: left;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .crm-searchResult{
+    width: 100%;
+    height: 400px;
+  }
+}

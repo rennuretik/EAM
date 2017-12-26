@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.composite-panel{
+	overflow:hidden;
+}
+.composite-body{
+	border:1px solid #99BBE8;
+	border-top-width:0px;
+	overflow:hidden;
+	position:relative;
+	margin-left : 10px;
+}
+.composite-content{
+	overflow:auto;
+}
+.composite-label{
+	
+}

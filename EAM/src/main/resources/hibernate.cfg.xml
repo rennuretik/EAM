@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/eam</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.hfut.entity.UsersEntity"/>
+      <mapping class="com.hfut.entity.ClazzEntity"/>
+      <mapping class="com.hfut.entity.CourseEntity"/>
+    <mapping class="com.hfut.entity.FacultyEntity"/>
+    <mapping class="com.hfut.entity.MajorEntity"/>
+    <mapping class="com.hfut.entity.RoomEntity"/>
+    <mapping class="com.hfut.entity.SelectCourseEntity"/>
+    <mapping class="com.hfut.entity.StudentEntity"/>
+    <mapping class="com.hfut.entity.TeachClassEntity"/>
+    <mapping class="com.hfut.entity.TeachCourseEntity"/>
+    <mapping class="com.hfut.entity.TeacherEntity"/>
+    <mapping class="com.hfut.entity.TimeEntity"/>
+    <mapping class="com.hfut.entity.CourseplanEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

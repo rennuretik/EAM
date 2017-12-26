@@ -1,0 +1,408 @@
+@import "skin";
+body{
+  background: @body-background;
+  color: @body-fontcolor;
+}
+.crm-clearfloat{
+  clear: both;
+}
+.width100{
+  width: 100%;
+}
+#crm-index-modalBtn{
+  position: absolute;
+  z-index: -99;
+  display: none;
+}
+
+// display-inline
+.display-IB{
+  display: inline-block;
+}
+
+/**
+  * CRM公用组件样式
+  */
+// input
+.crm-form-input{
+  display: inline-block;
+  position: relative;
+  line-height: 30px\9;
+  label.crm-label{
+    padding: 5px 16px;
+    margin-bottom: 0;
+    display: inline\9;
+  }
+  input.crm-input{
+    height: 30px;
+    border: 1px solid @crm-input-border-color;
+    background: @body-background;
+    vertical-align: top;
+    &:focus{
+      border-color: @crm-input-border-color-hover;
+    }
+  }
+
+}
+.crm-select-group{
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  vertical-align: top;
+  .crm-input.crm-select{
+    background: url("../../images/icon-sys02.png") no-repeat 90% center @body-background;
+    padding-left: 5px;
+  }
+  ul.crm-select-menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ccc;
+    li{
+      padding: 5px;
+      cursor: pointer;
+      &:hover,&:active{
+        background: @body-background;
+      }
+    }
+  }
+}
+// button
+//长button
+.crm-btn-lg{
+  border: none;
+  width: 184px;
+  height: 40px;
+  border-radius:4px;
+}
+//常用button
+.crm-btn-common{
+  border: none;
+  width: 84px;
+  height: 32px;
+  border-radius:4px;
+}
+//小button
+.crm-btn-small{
+  border: none;
+  width: 47px;
+  height: 26px;
+  border-radius:3px;
+  padding:0;
+}
+.crm-btn-red{
+  background: @crm-btn-bg-red;
+  color: #fff;
+}
+.crm-btn-green{
+  background: @crm-btn-bg-green;
+  color: #fff;
+}
+.crm-btn-blue{
+  background: @crm-btn-bg-blue;
+  color: #fff;
+}
+.crm-btn-yellow {
+  background: @crm-btn-bg-yellow;
+  color: #fff;
+}
+.crm-btn-gray {
+  background: @crm-btn-bg-gray;
+  color: #fff;
+}
+
+/**
+  * @index页面样式
+  */
+/* 通用导航 */
+.crm-navbar{
+  width: 100%;
+  height: 80px;
+  background: @navbar-background;
+  // 导航头菜单按钮
+  .crm-nav-menu{
+    float: left;
+    height: 80px;
+    width: 80px;
+    .crm-homemain{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: @navbar-homemain;
+    }
+  }
+  // logo
+  .crm-logo{
+    float: left;
+    height: 80px;
+    width: 400px;
+    background: @navbar-logo;
+  }
+
+  // 面包屑导航
+  .crm-breadcrumb{
+    position: relative;
+    height: 0;
+    .breadcrumb{
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      display: inline;
+      position: relative;
+      left: -328px;
+      top: 46px;
+      span,li{
+        color: #fff;
+      }
+    }
+  }
+
+  // 导航栏搜索
+  .crm-search{
+    float: right;
+    height: 80px;
+    margin-right: 40px;
+    p{
+      margin-top: 26px;
+      img{
+        position: relative;
+        left: 46px;
+        top: -1px;
+      }
+      input{
+        border: none;
+        background: @navbar-search-bg;
+        margin-left: 20px;
+      }
+      .crm-navsearch-input{
+        width: 180px;
+        height: 25px;
+        line-height: 25px;
+        padding-left: 32px;
+        padding-right: 10px;
+      }
+      .crm-navsearch-input:focus{
+        outline-style: hidden;
+        outline: none;
+      }
+      .crm-navsearch-btn{
+        color: #fff;
+        vertical-align: top;
+        height: 25px;
+        border-radius: 12px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+/* 通用tabs */
+.crm-tabs{
+  p.crm-tabs-info{
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    background: @body-background;
+  }
+  div.crm-tabs-items{
+    background: @body-background;
+    ul>li{
+      float: left;
+      margin-right: -15px;
+      a{
+        float: left;
+        position: relative;
+        padding: 0 30px;
+        height: 0;
+        line-height: 30px;
+        text-decoration: none;
+        cursor:default ;
+        color: @tab-fontcolor;
+        border-bottom: 30px solid @tab-bgcolor;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        &:hover,&:focus{
+          border-bottom-color: #fff;
+          color: #81848b;
+        }
+      }
+    }
+    ul>li.crm-active{
+      z-index: 999;position: relative;
+      a{
+        border-bottom-color: #fff;
+        color: @body-fontcolor;
+      }
+    }
+  }
+}
+//没有tab的iframe容器
+.ntab-ifcon {
+  position: absolute;
+  top: 100px;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 10px;
+}
+/* iframe容器 */
+.crm-iframecontainer{
+  position: absolute;
+  top: 145px;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 10px;
+  .crm-iframe{
+    width: 100%;
+    min-width: 994px;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #fff;
+  }
+}
+//间距调节
+.crm-mgTop{
+   margin-top:15px;
+}
+.crm-mgLeft{
+  margin-left:25px;
+}
+
+//页面布局
+/*客户基本信息*/
+.crm-inLeft{
+  position:fixed;
+  width:200px;
+  left:0;
+  top:0;
+  background: #fff;
+  bottom:0;
+}
+.crm-inLeft>ul{
+  width:100%
+}
+.crm-inLeft>ul>li>a{
+  display:inline-block;
+  width:200px;
+}
+.crm-inRight{
+  margin-left:220px;
+  margin-right:20px;
+  position: relative;
+}
+.crm-inRight>div{
+  min-width:980px;
+ }
+
+
+.crm-inRight tr td{
+  border-top:none
+}
+.crm-inRight .crm-tdpd{
+  padding-top:16px;
+}
+
+.crm-top {
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+.crm-bottom {
+  width: 100%;
+  background: #fff;
+}
+
+
+
+.crm-inTitle{
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+//overflow:hidden的样式
+.crm-overhide{
+  overflow:hidden;
+}
+//crm-result
+.crm-result{
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 76px;
+  color: #80838a;
+  margin: 0;
+  line-height: 80px;
+  background: #edf0f5;
+  z-index: 4;
+}
+//规范间距
+.crm-instance{
+  margin-right:20px;
+}
+//去除ie8下因为label的max-width换行的问题
+.clear-max-width{
+  max-width:none;
+}
+//内容背景为白色
+.content-bg {
+  background: #fff;
+}
+//button底部距离
+.btn-padding-bottom {
+  padding-bottom: 20px;
+}
+.crm-outside-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: #fff;
+  padding: 10px;
+  margin: 20px;
+}
+
+//日期输入框设置
+.input-daterange {
+  display: inline-block;
+  height: 34px;
+}
+//输入框设置
+.mg-hs-inp {
+  width: 220px;
+  display: inline-block;
+}
+
+//字体加粗
+.font-bold {
+  font-weight: bold;
+}
+
+//块级元素转换
+.blk-dpy {
+  display: inline-block;
+}
+//bootstrap样式覆盖
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #8a8dd2;
+}
+.nav-pills > li > a {
+  border-radius:0;
+}
+.panel{
+  border:none;
+}
+.panel-heading{
+  border-bottom: none;
+}
+
+//下拉框内容边距
+.dropdown-menu {
+  padding-left: 10px;
+
+}

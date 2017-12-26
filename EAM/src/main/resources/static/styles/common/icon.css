@@ -1,0 +1,175 @@
+.homeIcon {
+	background: url(../../images/icon/home_nav.gif) no-repeat;
+}
+
+.metadataIcon {
+	background: url(../../images/icon/metadata.gif) no-repeat;
+}
+
+.systemManageIcon {
+	background: url(../../images/icon/config.png) no-repeat;
+}
+
+.configEditIcon {
+	background: url(../../images/icon/cog_edit.png) no-repeat;
+}
+
+.fileEditIcon {
+	background: url(../../images/icon/file_edit.png) no-repeat;
+}
+
+.fileIcon {
+	background: url(../../images/icon/file.gif) no-repeat;
+}
+
+.fileTableIcon {
+	background: url(../../images/icon/file_table.gif) no-repeat;
+}
+
+.bookEditIcon {
+	background: url(../../images/icon/book_edit.png) no-repeat;
+}
+
+.acceptIcon {
+	background: url(../../images/icon/accept.png) no-repeat;
+}
+
+.deleteIcon {
+	background: url(../../images/icon/delete.gif) no-repeat;
+}
+
+.delete1Icon {
+	background: url(../../images/icon/delete_1.gif) no-repeat;
+}
+
+.delete2Icon {
+	background: url(../../images/icon/delete_2.png) no-repeat;
+}
+
+.excelFileIcon {
+	background: url(../../images/icon/excel_file.png) no-repeat;
+}
+
+.excelSheetIcon {
+	background: url(../../images/icon/excel_sheet.png) no-repeat;
+}
+
+.excelColumnIcon {
+	background: url(../../images/icon/excel_column.png) no-repeat;
+}
+
+.columnIcon {
+	background: url(../../images/icon/column.gif) no-repeat;
+}
+
+.importIcon {
+	background: url(../../images/icon/import.gif) no-repeat;
+}
+
+.addIcon {
+	background: url(../../images/icon/add.gif) no-repeat;
+}
+
+.editIcon {
+	background: url(../../images/icon/edit.gif) no-repeat;
+}
+
+.addToTopicIcon {
+	background: url(../../images/icon/add_to_topic.gif) no-repeat;
+}
+
+.addToDataItemIcon {
+	background: url(../../images/icon/add_to_dataitem.png) no-repeat;
+}
+
+.databaseGoIcon {
+	background: url(../../images/icon/database_go.png) no-repeat;
+}
+
+.addTableIcon {
+	background: url(../../images/icon/add_table.gif) no-repeat;
+}
+
+.repoSyncIcon {
+	background: url(../../images/icon/repository-synchronize.gif) no-repeat;
+}
+
+.historyIcon {
+	background: url(../../images/icon/history.gif) no-repeat;
+}
+
+.copyIcon {
+	background: url(../../images/icon/copy.gif) no-repeat;
+}
+
+.tableGoIcon {
+	background: url(../../images/icon/table_go.png) no-repeat;
+}
+
+.tableIcon {
+	background: url(../../images/icon/table.gif) no-repeat;
+}
+
+.viewIcon {
+	background: url(../../images/icon/view.gif) no-repeat;
+}
+
+.packageIcon {
+	background: url(../../images/icon/package.gif) no-repeat;
+}
+
+.fileSetIcon {
+	background: url(../../images/icon/folder_page.png) no-repeat;
+}
+
+.dataSourceIcon {
+	background: url(../../images/icon/folder_page.png) no-repeat;
+}
+
+.catalogIcon {
+	background: url(../../images/icon/catalog.gif) no-repeat;
+}
+
+.schemaIcon {
+	background: url(../../images/icon/schema.gif) no-repeat;
+}
+
+.primaryKeyIcon {
+	background: url(../../images/icon/key_p.gif) no-repeat;
+}
+
+.indexIcon {
+	background: url(../../images/icon/index.gif) no-repeat;
+}
+
+.modelIcon {
+	background: url(../../images/icon/model.gif) no-repeat;
+}
+
+.relationshipIcon {
+	background: url(../../images/icon/link.png) no-repeat;
+}
+
+.folderIcon {
+	background: url(../../images/icon/folder.png) no-repeat;
+}
+
+.folderAddIcon {
+	background: url(../../images/icon/folder_add.png) no-repeat;
+}
+
+.folderEditIcon {
+	background: url(../../images/icon/folder_edit.png) no-repeat;
+}
+
+.folderDeleteIcon {
+	background: url(../../images/icon/folder_delete.png) no-repeat;
+}
+
+.sqlIcon {
+	background: url(../../images/icon/sql.gif) no-repeat;
+}
+
+.findIcon {
+	background: url(../../images/icon/find.png) no-repeat;
+}

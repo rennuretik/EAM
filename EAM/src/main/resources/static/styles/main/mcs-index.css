@@ -1,0 +1,13 @@
+
+
+.pagecontent{
+	width:99%;
+	margin-left:1%;
+}
+
+iframe{
+	border:none;
+	display: block;
+	overflow-x:hidden ;
+}
+

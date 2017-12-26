@@ -1,0 +1,92 @@
+// 客户查询结果页面样式，即： 外层tabs标签的内容部分
+
+.crm-inside-tabs{
+  width: 100%;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+
+  // 内层tabs客户名称栏
+  .client-name{
+    padding: 0 20px 10px 20px;
+    background: #fff;
+    margin: 0;
+    button{
+      border-radius: 3px;
+      padding: 0 10px;
+      float: right;
+      border: none;
+      color: #fff;
+      margin-left:20px;
+    }
+    .chaim-client{
+      margin-right: 20px;
+      background: #49d3c6;
+    }
+    .client-follow-btn{
+      background: #e75a44;
+
+    }
+  }
+  // 内层tabs标签栏
+  .client-tabs{
+    ul{
+      border: none;
+      background: #fff;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      white-space: nowrap;
+      overflow: hidden;
+      li{
+        margin: 0;
+        flex-grow: 1;
+        a{
+          &:hover{
+            .close-icon{
+              visibility: visible;
+            }
+          }
+          .close-icon{
+            visibility: hidden;
+            padding-left: 5px;
+            display: inline-block;
+            width: 10px;
+          }
+          .tabs-flag{
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          border-radius: 0;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          margin: 0;
+          text-align: center;
+          border-bottom: 2px solid #ddd;
+          color: #a2a2a2;
+          &:hover{
+            border-radius: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid @main-color-1;
+            color: @main-color-1;
+          }
+        }
+      }
+      li.active a{
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid @main-color-1;
+        color: @main-color-1;
+
+      }
+    }
+  }
+}

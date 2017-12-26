@@ -1,0 +1,150 @@
+.combo-container {
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.combo-container .field-label {
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12px;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+.field-label .field-required {
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: top;
+	margin-top: 1px;
+	color: red;
+}
+
+.combo-container .combo {
+	border: 1px solid #99bbe8;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 12px;
+	background: #fff;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.combo .combo-value {
+	display: none;
+}
+
+.combo .combo-text {
+	font-size: 12px;
+	border: 0px;
+	line-height: 20px;
+	height: 20px;
+	padding: 0px;
+	*height: 18px;
+	*line-height: 18px;
+	_height: 18px;
+	_line-height: 18px;
+	padding-right: 2px;
+}
+
+.combo .combo-arrow {
+	background: url(../images/images.gif) no-repeat -68px -54px;
+	width: 16px;
+	height: 21px;
+	overflow: hidden;
+	margin-top: -1px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+.combo-disabled{
+	background: url(../images/images.gif) no-repeat 0px -54px !important;
+}
+.combo-container .input-onfoucs {
+	border-color: #7EADD9;
+}
+
+.combo-container .validate-failure {
+	background: url(../images/textfield/invalid_line.gif) left bottom
+		repeat-x;
+}
+
+.combo-container .input-default-emptyText {
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+.combo .combo-arrow:hover {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.trigger-content {
+	display: none;
+	position: absolute !important;
+	border: 1px solid #7EADD9;
+	border-top: 0;
+	overflow: auto;
+	font-size: 12px;
+	clear: both;
+	z-index: 99999;
+	background-color: white;
+}
+
+.combogrid-content {
+	display: none;
+	position: absolute !important;
+	border: 1px solid #7EADD9;
+	overflow: auto;
+	font-size: 11px;
+	clear: both;
+	z-index: 99999;
+	background-color: white;
+}
+
+.ztree-content {
+	display: none;
+	position: absolute !important;
+	border: 1px solid #7EADD9;
+	overflow: auto;
+	font-size: 11px;
+	clear: both;
+	z-index: 99999;
+	background-color: white;
+}
+
+.combo-container .button-content {
+	position: absolute;
+	right: 0;
+	border: 1px solid #7EADD9;
+	border-top: 0;
+	overflow: auto;
+	font-size: 11px;
+}
+
+.trigger-content ul {
+	list-style: none;
+
+	/*width:100%;*/
+}
+
+.trigger-content ul li {
+	padding: 2px;
+	border: 1px dotted #FFFFFF;
+	display: block;
+	white-space: nowrap;
+}
+/*  .trigger-content ul li:hover{
+	background:#DFE8F6;
+	cursor:pointer;
+}  */
+.trigger-content ul a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.trigger-content ul li.item-selected {
+	background: #7EADD9;
+}

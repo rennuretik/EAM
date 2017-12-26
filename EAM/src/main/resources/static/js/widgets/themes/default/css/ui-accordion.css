@@ -1,0 +1,96 @@
+/* CSS Document */
+
+.accordion-container {
+	border: 1px solid #d9e5e9;
+	background:#3b3d3e;
+	color:#eee;
+	overflow: hidden;
+}
+
+.accordion-container-noborder {
+	border: 0;
+}
+
+.accordion {
+	overflow: hidden;
+}
+
+.accordion-title {
+	background:#333435;
+	line-height: 20px;
+	padding: 2px 0 2px 5px;
+	border-top: 1px solid #454545;
+	border-left: 3px solid #f39c12;
+	/*border-left: 2px solid #f39c12;*/
+	width: 100%;
+	-moz-user-select: none;/*火狐禁止选中*/
+	-webkit-user-select: none;/*谷歌禁止选中*/
+	-ms-user-select: none;/*IE禁止选中*/
+	white-space: nowrap;/*文本不换行*/
+	word-break: keep-all;/*文本不换行*/
+	overflow: hidden;
+	position:relative;
+	cursor:pointer;
+	color:#eee;
+
+}
+
+.accordion-title:hover{
+	background:#4e5052;
+	/*border-left: 2px solid #f39c12;*/
+
+}
+
+.accordion-title-noborder {
+	border-top: 0;
+}
+
+.accordion-content {
+	display: none;
+	overflow: hidden;
+}
+
+.accordion-content-first-default {
+	display: block;
+}
+
+.accordion-title-hover {
+	background: url(../images/accordion/accordion_hover.gif) repeat-x;
+}
+
+.accordion-title-active {
+	background: #333435;
+	font-weight: bold;
+	border-bottom: 1px solid #454545;
+	border-left: 3px solid #f39c12;
+	color:#fff;
+}
+
+.accordion-icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	float: left;
+	margin-top: 3px;
+}
+
+.accordion-tool {
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:3px;
+	right:5px;
+}
+
+.accordion-collapse {
+	background: url(../images/images.png) no-repeat 0px 4px;
+}
+
+.accordion-expand {
+	background: url(../images/images.png) no-repeat -16px 4px;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}

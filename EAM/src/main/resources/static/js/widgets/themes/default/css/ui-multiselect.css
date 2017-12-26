@@ -1,0 +1,134 @@
+.multiselect-wrap {
+	margin: 0;
+	padding: 0;
+}
+
+.multiselect-wrap table {
+	width: 100%;
+	height: 100%;
+}
+
+.multiselect-wrap table td.label {
+	font-size: 14px;
+}
+
+.multiselect-wrap table .fromselector {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	border: 1px solid #7EADD9;
+	border-top: none;
+}
+
+.multiselect-wrap .multi-item {
+	list-style: none;
+	list-style-position: outside;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.multiselect-wrap .multi-item li {
+	list-style: none;
+	cursor: pointer;
+	padding: 1px 2px;
+	border-style: dotted;
+	border-color: #fff;
+	border-width: 1px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.multiselect-wrap .multi-item li.selected {
+	border-color: #8eabe4;
+	background: #cbdaf0 !important;
+}
+
+.multiselect-wrap .multi-item li.hover {
+	background: #dfe8f6;
+	border-color: #a3bae9;
+}
+
+.multiselect-wrap table td.buttons {
+	width: 35px;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.multiselect-wrap table td.buttons img {
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border: 0;
+	overflow: hidden;
+	margin: 4px; +
+	margin: 2px;
+}
+
+.multiselect-wrap table .toselector {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	border: 1px solid #7EADD9;
+	border-top: 0;
+}
+
+.multiselect-wrap table .multi-list {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.multiselect-wrap table span {
+	position: absolute;
+	color: #15428B;
+}
+
+.multiselect-wrap table span.line {
+	top: 0;
+	border-top: 1px solid #7EADD9;
+	font-size: 0;
+	height: 5px;
+}
+
+.multiselect-wrap table span.title {
+	top: -7px;
+	left: 8px;
+	color: #000000;
+	font-weight: bold;
+}
+/*造作按钮图标*/
+.multiselect-wrap .top {
+	background: url(../images/images.png) no-repeat -102px -34px;
+}
+
+.multiselect-wrap .up {
+	background: url(../images/images.png) no-repeat -119px -34px;
+}
+
+.multiselect-wrap .bottom {
+	background: url(../images/images.png) no-repeat 0px -34px;
+}
+
+.multiselect-wrap .down {
+	background: url(../images/images.png) no-repeat -17px -34px;
+}
+
+.multiselect-wrap .left {
+	background: url(../images/images.png) no-repeat -51px -34px;
+}
+
+.multiselect-wrap .leftAll {
+	background: url(../images/images.png) no-repeat -34px -34px;
+}
+
+.multiselect-wrap .right {
+	background: url(../images/images.png) no-repeat -68px -34px;
+}
+
+.multiselect-wrap .rightAll {
+	background: url(../images/images.png) no-repeat -85px -34px;
+}

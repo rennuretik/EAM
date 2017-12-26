@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+.window {
+	font-size: 12px;
+	position: absolute;
+	overflow: hidden;
+	background: #f7f9fa;
+	padding: 4px;
+	border: 1px solid #c90001;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.window .window-header {
+	background: transparent;
+	padding: 0px 0px 5px 0px;
+}
+
+.window .window-body {
+	background: #FFFFFF;
+}
+
+.window-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity = 40);
+	opacity: 0.40;
+	background: #ccc;
+	font-size: 1px;
+	overflow: hidden;
+}
+
+.window-proxy {
+	position: absolute;
+	overflow: hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px dashed #15428b;
+	cursor: move;
+}

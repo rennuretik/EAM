@@ -1,0 +1,43 @@
+<div class="crm-header">
+    <div class="crm-navbar">
+        <!--导航菜单按钮-->
+        <div class="homemain pull-left" id="nav-drop-btn"></div>
+        <!-- 下拉菜单 -->
+        <div class="navbar-dropmenu-container" id="navdrop-menu">
+            <!-- 遮罩 -->
+            <div class="navdrop-mask"></div>
+            <!-- 一级菜单 -->
+            <div class="first-level-menu">
+                <ul class="list-group">
+                    <li style=" font-size:15px;text-align:center"><a href="../teacher/list">教师管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../course/list">课程管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a  href="../major/list">专业管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../faculty/list">系管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../clazz/list">班级管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../room/list">教室管理</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../coursePlan/list">EMA主界面</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../teachCourse/list">教师选课</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../selectCourse/list">班级选课</a></li>
+                    <li style=" font-size:15px;text-align:center"><a href="../teachClass/list">教学班查询</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--search-->
+        <div class="search pull-right">
+        </div>
+        <!--项目logo-->
+        <div class="logo pull-left">
+        </div>
+        <!--文字滚动-->
+        <div id="hdscrool">
+            <ul>
+                <li><a href="#">若出现不能解决的bug，可以找开发人询问</a></li>
+                <li><a href="#">合肥工业大学宣城校区物联网13级01班陈佳</a></li>
+                <li><a href="#">联系电话：13215633883 qq：978599459</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+

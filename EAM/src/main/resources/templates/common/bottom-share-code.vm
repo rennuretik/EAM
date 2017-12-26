@@ -1,0 +1,212 @@
+<form class="fast-form" method="post" action="${rc.contextPath}/logon">
+<div class="fast-login" style="display: none;">
+    <div class="crm-login">
+        <div class="login-outside">
+            <div class="login">
+                <div class="log-con">
+                    <div class="con-head">
+                        <img src="${rc.contextPath}/images/login-tit.png" alt="">
+                    </div>
+                    <form method="post" action="">
+                        <div class="con-body">
+                            <div class="by-con">
+                                <p class="fr">登录</p>
+                                <div class="log-int">
+                                    <input type="text" id="loginName" name="loginName" placeholder="用户名">
+                                    <input type="password" id="password" name="password" placeholder="密码">
+                                </div>
+                                <span id="alert"></span>
+                                <div class="log-btn">
+                                    <input type="button" id="submit" value="登录" class="crm-btn-lg crm-btn-red crm-log">
+                                    <input type="button" value="取消" class="crm-btn-lg crm-btn-green">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<div class="modal" tabindex="-1" id="modal-msg" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="makeCloseMsg">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <i>提示消息</i>
+            </div>
+            <div class="modal-body"><p id="msg-content"></p></div>
+            <div class="modal-footer">
+                <button type="button" class="btn crm-btn-red" data-dismiss="modal" id="makeSureMsg" hidden="hidden">确认</button>
+                <button type="button" class="btn crm-btn-gray" data-dismiss="modal" id="makeBackMsg">返回</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="${rc.contextPath}/js/gallery/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/laypage/laypage.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/jquery.autocompleter.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/gallery/juicer/0.6.5-stable/juicer.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/app/crm-navbar.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/app/link-to.js"></script>
+<script type="text/javascript" src="${rc.contextPath}/js/Marquee.js"></script>
+<script type="text/javascript">
+    var contextPath = "${rc.contextPath}";
+
+	function customManagerAutocomplete(inputId,orgCode,_callback){
+		var dataUrl = contextPath+"/component/custom-manager.json?orgCode="+orgCode;
+		$("#"+inputId).autocompleter({
+			source:dataUrl,
+			cache:false,
+            formatResult:function(data){
+				return data.autocompleteVos;
+			},
+			callback:_callback
+		});
+	}
+    $("#hdscrool").kxbdSuperMarquee({
+        distance:20,
+        time:4,
+        direction:"up"
+    })
+
+    $(function () {
+		$.ajaxSetup({
+			statusCode : {
+				401 : function(){
+					fastLogin()
+				}
+			}}
+		);
+
+		$(".crm-log").on("click", fastLoginPost);
+		function fastLogin(win,goUrl) {
+			$(".fast-login").show();
+			$ ( "#alert" ).html ( "已在别处登录或登录已超时" );
+		}
+		function fastLoginPost(){
+			if ( $("#loginName").val ().length == 0 ) {
+				$ ( "#alert" ).html ( "用户名不能为空 ！" );
+				return;
+			}
+			if ( $("#password").val ().length == 0 ) {
+				$ ( "#alert" ).html ( "密码不能为空 ！" );
+				return;
+			}
+			$.ajax({
+			   url: contextPath + "/logon.json",
+			   data : $(".fast-form").serialize(),
+			   dataType : "json",
+			   type : "post",
+			   success : function(result){
+				   if (result.success){
+					   $(".fast-login").hide();
+				   }else {
+					   $("#alert").html(result.message);
+				   }
+			   },
+			   error : function(result){
+
+			   }
+		   })
+		}
+        $("#cancelRePwd").on("click", function () {
+            clearPwd();
+            $("#revpass").modal('hide');
+
+        })
+
+        function clearPwd(){
+            $("#originalPwd").val("");
+            $("#newPwd").val("");
+            $("#newPwdRept").val("");
+            $("#pass-alert").addClass("hid")
+        }
+        /*修改密码功能*/
+        function passalert(content){
+               $("#pass-alert").removeClass("hid").text(content);
+
+        }
+        $("#makeRePwd").on("click", function () {
+            var originalPwd=$("#originalPwd").val();
+            var newPwd=$("#newPwd").val();
+            var newPwdRept=$("#newPwdRept").val();
+            if(originalPwd && newPwd && newPwdRept) {
+                if(newPwd===newPwdRept) {
+                    $.ajax({
+                        url: contextPath + "/user/modify/passwd.json",
+                        async:false,
+                        dataType : "json",
+                        type : "post",
+                        data : {
+                            oldPassword:originalPwd,
+                            newPassword:newPwd
+                        },
+                        success : function(result){
+                            if (result.success){
+                                passalert("修改成功");
+                                $("#cancelRePwdBtn").show();
+                                $("#cancelRePwd").show();
+                                $("#isFirstLogin").val("false");
+                                setTimeout(function(){
+                                    $("#revpass").modal('hide');
+                                    clearPwd();
+                                },2000)
+
+                            }else {
+                                passalert( result.message)
+                            }
+                        },
+                        error : function(result){
+                            passalert(" 修改密码失败");
+                        }
+                    })
+                }else{
+                    passalert(" 两次新密码不一致！")
+                }
+            }
+
+        });
+    });
+
+    function showmodal(){
+        $("body").append('<div class="loadmodal"></div>');
+    }
+    function hidemodal(){
+        $(".loadmodal").remove();
+    }
+
+    /**
+     * 全局的 提示消息 小模态框
+     * */
+
+    $("#modal-msg").modal({
+        keyboard:true,
+        show:false,
+        backdrop:false
+    });
+
+    function showMsgCommon(msg) {
+        $("#msg-content").html(msg);
+        $("#makeSureMsg").hide();
+        $("#modal-msg").modal("show");
+    }
+
+    function showMsgCommon2(msg,callBack) {
+        showMsgCommon(msg);
+        $("#makeBackMsg").click(callBack);
+    }
+
+    function confirmCom(msg,callBack,argsArr,context) {
+        showMsgCommon(msg);
+        $("#makeSureMsg").show().unbind("click");
+        $("#makeSureMsg").click(function () {
+            callBack.apply(context, argsArr);
+        });
+    }
+</script>

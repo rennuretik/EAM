@@ -1,0 +1,14 @@
+.ui-mask {
+	position: absolute; 
+	filter: alpha(opacity=40); 
+	background-color: #aaa;
+    opacity:0.3;
+    -moz-opacity:0.3;
+}
+.ui-mask-msg{
+	filter: alpha(opacity=30);
+    opacity:0.3;
+    font-size : 18px;
+    -moz-opacity:0.3;
+    position: absolute; 
+}

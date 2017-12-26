@@ -1,0 +1,256 @@
+/* CSS Document */
+.tabs-container {
+	overflow: hidden;
+	background: #fff;
+}
+
+.tabs-header {
+	border: 1px solid #8DB2E3;
+	background:#9ec5d7;
+	border-bottom: 0px;
+	position: relative;
+	padding: 0px;
+	padding-top: 2px;
+	overflow: hidden;
+}
+
+.tabs-header-noborder {
+	border: 0px;
+}
+
+.tabs-scroll {
+	position: absolute;
+	top: 3px;
+	width: 18px;
+	height: 26px;
+	border-bottom: 1px solid #8DB2E3;
+	font-size: 1px;
+	cursor: pointer;
+	display: none;
+}
+
+.tabs-scroll-left {
+	left: 0px;
+	border-left: 1px solid #8DB2E3;
+	background: url(../images/images.gif) no-repeat -18px -318px;
+}
+
+/*.tabs-scroll-left-disabled {
+	background-position: -18px 0;
+	cursor: default;
+}*/
+
+.tabs-scroll-right {
+	right: 0px;
+	border-right: 1px solid #8DB2E3;
+	background: url(../images/images.gif) no-repeat -37px -318px;
+}
+
+/*.tabs-scroll-right-disabled {
+	background-position: 0 0;
+	cursor: default;
+}*/
+
+.tabs-wrap {
+	position: relative;
+	left: 0px;
+	overflow: hidden;
+	width: 100%;
+	height: 28px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tabs-scrolling {
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+.tabs {
+	list-style-type: none;
+	height: 26px;
+	margin: 0px;
+	padding: 1px 0 0 0;
+	padding-left: 4px;
+	color:#4b829c;
+	font-size: 12px;
+	width: 5000px;
+	border-bottom: 1px solid #8DB2E3;
+}
+
+.tabs li.tabs-liR {
+	float: left;
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	z-index: 0;
+}
+
+.tabs li.tabs-liK {
+	float: left;
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	margin-right: -23px;
+}
+
+.tabs-inner-leftR {
+	display: inline-block;
+	padding: 0px 6px 0px 11px;
+	background: url(../images/images.gif) no-repeat 0 -234px;
+}
+
+.tabs-inner-leftK {
+	display: inline-block;
+	padding: 0px 6px 0px 9px;
+	background: url(../images/images.gif) no-repeat 0 -234px;
+}
+
+.tabs li span.tabs-innerR {
+	display: inline-block;
+	text-decoration: none;
+	background: url(../images/tab/tab_r.gif) no-repeat right top;
+	padding: 0px 4px;
+	line-height: 26px;
+	white-space: nowrap;
+}
+
+.tabs li span.tabs-innerK {
+	display: inline-block;
+	text-decoration: none;
+	background: url(../images/tab/tab_tr.png) no-repeat right top;
+	margin: 0px;
+	padding: 0px 4px;
+	padding-right: 22px;
+	line-height: 26px;
+	white-space: nowrap;
+}
+
+.tabs-inner-leftR:hover {
+	background-position: 0  -262px;
+}
+
+.tabs-inner-leftK:hover {
+	background-position:  0 -262px;
+}
+
+.tabs li span.tabs-innerR:hover {
+	background-position: bottom right;
+	cursor: pointer;
+}
+
+.tabs li span.tabs-innerK:hover {
+	background-position: bottom right;
+}
+
+.tabs li.tabs-selected {
+	position: relative;
+	z-index: 0;
+}
+
+.tabs li.tabs-selected span.tabs-innerR {
+	color: #416AA3;
+	font-weight: bold;
+	background: url(../images/tab/tabs_active_r.gif) no-repeat right top;
+	outline: none;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs li.tabs-selected span.tabs-innerK {
+	color: #416AA3;
+	font-weight: bold;
+	background: url(../images/tab/tabs_active_kr.png) no-repeat right top;
+	outline: none;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs li.tabs-selected span.tabs-innerR span.tabs-inner-leftR {
+	background: url(../images/images.gif) no-repeat 0px -289px;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs li.tabs-selected span.tabs-innerK span.tabs-inner-leftK {
+	background: url(../images/images.gif) no-repeat  0px -289px;
+	border-bottom: 1px solid #fff;
+}
+
+.tabs-title {
+	display: inline-block;
+	/*width:80%;
+	text-align:center;*/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.tabs-with-icon {
+	margin-left: 8px;
+}
+
+.tabs-icon {
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.tabs-closable {
+	padding-right: 8px;
+}
+
+.tabs li a.tabs-closeR {
+	position: absolute;
+	font-size: 1px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	top: 2px;
+	right: 2px;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	background: url(../images/images.gif) no-repeat -73px -317px;
+}
+
+.tabs li a.tabs-closeK {
+	position: absolute;
+	font-size: 1px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	top: 3px;
+	right: 1px;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	margin-right: 23px;
+	background: url(../images/images.gif) no-repeat -73px -317px;
+}
+
+.tabs li a:hover.tabs-closeR {
+	background: url(../images/images.gif) no-repeat -82px -317px;
+}
+
+.tabs li a:hover.tabs-closeK {
+	background: url(../images/images.gif) no-repeat -82px -317px;
+}
+
+.tabs-body {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #8DB2E3;
+	border-top: 0px;
+	overflow: hidden;
+}
+
+.tabs-body-noborder {
+	border: 0px;
+}
+
+.tabs-body-wrap {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	display: none;
+}

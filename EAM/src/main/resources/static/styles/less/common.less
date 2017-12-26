@@ -1,0 +1,239 @@
+/*
+ *@公共部分
+ **/
+// 清除a, ul, li 标签默认样式
+a{
+  text-decoration: none  !important;
+}
+ul,li{
+  list-style: none;
+}
+// 清除浏览器默认outline
+input,button,select,textarea{outline:none}
+// 字体，背景
+body{
+  background: @body-bg-color;
+  color: @font-color-1;
+}
+// 清楚浮动
+.crm-clear{
+  clear: both;
+}
+// 占位div
+.placeholder-div{height: 560px}
+
+// 有内层tabs标签栏页面需要的遮罩
+.tabs-mask{
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+  width: 10px;
+  background: @body-bg-color;
+  z-index: 998;
+}
+// crm-form-input 输入框样式
+.crm-form-input{
+  margin-bottom: 20px;
+  label{
+    margin: 0;
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: right;
+  }
+  .crm-input{
+    .crm-form-control{
+      width: 100%;
+      height: 36px;
+      padding: 5px 10px;
+      border: 1px solid @border-color-1;
+      background: #f6f6f6;
+    }
+  }
+}
+// buttons  按钮样式
+.crm-btn{
+  border: none;
+  background: #e2e2e2;
+  border-radius: 5px;
+}
+.crm-btn-lg{
+  .crm-btn;
+  width: 184px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 0 10px;
+
+}
+.crm-btn-common{
+  .crm-btn;
+  width: 84px;
+  height: 32px;
+  border-radius: 4px;
+  margin: 0 10px;
+
+}
+.crm-btn-sm {
+  .crm-btn;
+  min-width: 47px;
+  height: 26px;
+  border-radius: 3px;
+  padding: 0 3px;
+  margin: 0 3px;
+}
+
+.crm-btn-red{
+  background: @btn-color-1;
+  color: #fff;
+}
+.crm-btn-green{
+  background: @btn-color-2;
+  color: #fff;
+}
+.crm-btn-gray{
+   background: @btn-color-3;
+   color: #fff;
+ }
+.crm-btn-blue {
+  background: @btn-color-4;
+  color: #fff;
+}
+// crm-pagination 分页组件
+.crm-pagination{
+  height: 32px;
+  line-height: 22px;
+  padding: 5px 10px;
+  img{
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px 0;
+  }
+  input.page-num{
+    width: 50px;
+    padding: 0 10px;
+    border: 1px solid @border-color-1;
+  }
+  select {
+    width: 100px;
+    height: 22px;
+    border: 1px solid @border-color-1;
+  }
+}
+// crm-panel 面板组件
+.crm-panel{
+  width: 100%;
+  border: 1px solid #f2f2f3;
+  margin-bottom: 10px;
+  .crm-panel-heading{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 15px;
+    background: #f2f2f3;
+    color: #81848b;
+    font-size: 16px;
+  }
+  .crm-panel-body{
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+.panel-default{
+  border-color: #F2F2F3;
+  table,tr,td,th{border-color: #F2F2F3;}
+}
+.panel-default .panel-heading{
+  background: #dfecf1;
+  color: @font-color-1;
+  h4.panel-title{
+    font-weight: bold;
+  }
+}
+.panel>.panel-group{
+  margin: 0;
+  .panel-heading,
+  .panel,
+  table{
+    border-radius: 0;
+    border: none;
+    margin: 0;
+  }
+  .panel-heading{
+    background: #f8f8f8;
+    color: @font-color-1;
+    border-top: 1px solid #F2F2F3;
+    .panel-title img{margin-right: 10px;}
+  }
+  .panel-collapse.collapse{
+    overflow-x: auto;
+  }
+  table{
+    white-space: nowrap;
+    font-size: 14px;
+    color: #81848b;
+    tr {
+      height: 40px;
+    }
+    .text-right{color: #a9adb7;}
+    .text-left{color: @font-color-1;}
+  }
+}
+
+//下拉选项增加hover效果
+.dropdown-menu li{
+  padding-left:11px;
+  border-bottom: 1px solid #ddd;
+}
+.dropdown-menu li:hover{
+    background-color: #666eb9;
+    color:#fff
+}
+//分页栏
+.page-select{
+  height:34px;
+  margin-left:30px;
+  line-height:34px;
+}
+
+.total-page{
+  margin-left:30px;
+}
+.pagenum{
+  margin-left:20px;
+}
+//标签样式
+.chprd-tag li{
+  cursor: pointer;
+  height: 35px;
+  border-radius: 6px;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+  font-size: 15px;
+  color: #666;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  width: 130px;
+}
+.d_posDown {
+  position: absolute!important;
+  top: 35px!important;
+  left: 0px!important;
+  background: #fff;
+  border: 1px solid #ccc;
+  height: 320px;
+  width: 340px;
+  overflow: auto;
+  display: none;
+  z-index:999;
+}
+.tree-btn{
+  border-radius:0;
+  border-left:none;
+  color:#bbb;
+}
+.d_posDown .d_SelectList {
+  margin: 0 10px 16px 10px;
+  clear: both;
+}
+

@@ -1,0 +1,91 @@
+.menu-mask {
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.root-menu,.child-menu,.child-parent-menu {
+  .fist-menu {
+    display: none;
+    z-index: 9999;
+    position: relative;
+    .tree-menu {
+      width: 80px;
+      li {
+        padding: 5px;
+        cursor: pointer;
+        &:hover,&:focus {
+          background: #f5f5f5;
+        }
+      }
+      .active-li {
+        background: #f5f5f5;
+      }
+    }
+    .secod-menu {
+      position: absolute;
+      //top:0;
+      left: 78px;
+      display: none;
+      z-index: 9999;
+
+      .thid-menu {
+        position: absolute;
+        //top:0;
+        left: 78px;
+        display: none;
+        z-index: 9999;
+
+      }
+    }
+  }
+}
+
+//tree 图标
+
+.ui-icon-bat_ico_docu {
+  background: url("../assets/images/icons/bat.png") !important;
+}
+.ui-icon-datastage_ico_docu {
+  background: url("../assets/images/icons/datasage.png") !important;
+}
+.ui-icon-chu_ico_docu {
+  background: url("../assets/images/icons/chu.png") !important;
+}
+.ui-icon-java_ico_docu {
+  background: url("../assets/images/icons/java.png") !important;
+}
+.ui-icon-exe_ico_docu {
+  background: url("../assets/images/icons/exe.png") !important;
+}
+.ui-icon-http_ico_docu {
+  background: url("../assets/images/icons/http.png") !important;
+}
+.ui-icon-kjb_ico_docu {
+  background: url("../assets/images/icons/kjb.png") !important;
+}
+.ui-icon-ktr_ico_docu {
+  background: url("../assets/images/icons/ktr.png") !important;
+}
+.ui-icon-shell_ico_docu {
+  background: url("../assets/images/icons/shell.png") !important;
+}
+.ui-icon-plan_ico_docu {
+  background: url("../assets/images/icons/plan.png") !important;
+}
+.ui-icon-serial_ico_close {
+  background: url("../assets/images/icons/serial.png") !important;
+}
+.ui-icon-serial_ico_open {
+  background: url("../assets/images/icons/serial.png") !important;
+}
+.ui-icon-parallel_ico_close {
+  background: url("../assets/images/icons/parallel.png") !important;
+}
+.ui-icon-parallel_ico_open {
+  background: url("../assets/images/icons/parallel.png") !important;
+}

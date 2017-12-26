@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+.messager-body {
+	margin: 3px 18px 3px 0px;
+	/*text-align:center;*/
+	line-height: 48px;
+	height: 48px;
+}
+
+.messager-icon {
+	float: left;
+	width: 32px;
+	height: 32px;
+}
+
+.messager-input {
+	border: 1px solid #ccc;
+	margin: 0px 10px 0px 10px;
+	width: 88%;
+	*width: 100%;
+	display: inline-block;
+	align: center;
+}
+
+.messager-error {
+	background: url('../images/images.png') no-repeat 0 -199px;
+	margin: 10px;
+}
+
+.messager-info {
+	background: url('../images/images.png') no-repeat -32px -199px ;
+	margin: 10px;
+}
+
+.messager-question {
+	background: url('../images/images.png') no-repeat -64px  -199px;
+	margin: 10px;
+}
+
+.messager-warning {
+	background: url('../images/images.png') no-repeat -96px -199px;
+	margin: 10px;
+}

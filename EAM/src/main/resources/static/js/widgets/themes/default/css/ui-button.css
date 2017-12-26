@@ -1,0 +1,107 @@
+/* CSS Document */
+@charset "utf-8";
+
+.button-btn{
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	zoom:1;
+	height:26px;
+	line-height: 22px;
+	padding-right:16px;
+	cursor:pointer;
+	*+margin : 0 3px;
+	background:url('../images/toolbar/button_a_bg.png') no-repeat top right;
+}
+
+a.button-btn-plain{
+	background:transparent;
+	padding-right:5px;
+	/*_border:0px solid #efefef;
+	_padding:1px 6px 1px 1px;
+	_padding:0px 5px 0px 0px;*/
+	background:url('../images/toolbar/button_bg_right.png') no-repeat top right;
+}
+a.button-btn span.button-btn-left{
+	display:inline-block;
+	background:url('../images/toolbar/button_span_bg.png') no-repeat top left;
+	height:26px;
+	padding-left:16px;
+	overflow:hidden
+}
+a.button-btn-plain span.button-btn-left{
+	background:url('../images/toolbar/button_bg.png');
+	padding-left:5px;
+}
+
+a.button-btn span span.button-btn-text {
+	display:inline-block;
+	height:16px;
+	line-height: 16px;
+	padding-left: 6px;
+	white-space:nowrap;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	vertical-align: middle;
+}
+a.button-btn span span span.button-btn-empty{
+	display:inline-block;
+	width:16px;
+}
+a:hover.button-btn{
+	background-position: bottom right;
+	outline:none;
+}
+a:hover.button-btn span.button-btn-left{
+	background-position: bottom left;
+	outline:none;
+}
+
+a:hover.button-btn-plain{
+	background-position: bottom right;
+	outline:none;
+	-moz-border-radius:4px;/*火狐下圆角*/
+	-webkit-border-radius: 4px;/*谷歌下圆角*/
+	-o-border-radius:4px;/*IE下圆角*/
+	border-radius: 4px; /*标准圆角*/
+}
+a:hover.button-btn-plain span.button-btn-left{
+	background-position: bottom left;
+	outline:none;
+	padding-left:5px;
+}
+a.button-btn .button-btn-focus{
+	outline:#0000FF dotted thin;
+}
+.button-btn-arrow {
+	display: inline-block;
+	width: 12px;
+	line-height: 14px;
+	background: url('../images/images.png') no-repeat -3px -358px;
+
+}
+.button-separator {
+	width:0;
+	height: 23px;
+	border-left: 1px solid #aaa2a2;
+	border-right: 1px solid white;
+	margin:0 3px -3px;
+	*+margin:0 1px 3px;
+	overflow:hidden;
+	font-size:1px;
+	cursor:default;
+	display: inline-block;
+}
+a.button-btn-disabled {
+	color: #ccc;
+	opacity: 0.5;//**谷歌下透明度**/
+	filter: alpha(opacity=50);/**IE下透明度**/
+	cursor: default;
+}
+a:hover.button-btn-disabled{
+	background-position: top right;
+}
+a:hover.button-btn-disabled span.button-btn-left{
+	background-position: top left;
+}

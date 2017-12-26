@@ -1,0 +1,61 @@
+body{
+	overflow-x:hidden ;
+}
+#list_navm{
+	width:200px;
+	float:left;
+	padding-top:30px;
+}
+.list_detail{
+	background:#6a6b70;
+	border-bottom:1px solid #fff;
+	color:#fff;
+	height:120px;
+	text-align:center;
+	font-size:18px;
+	padding-top:20px;
+}
+.list_size{
+	height:40px;
+	line-height:40px;
+}
+#list_content{
+	margin-left:330px;
+	font-size:16px;
+	padding-top:30px;
+	font-size:16px;
+	overflow:hidden;
+}
+#list_content ul{
+	width:98%;
+	margin:0 auto;
+}
+
+.list_report{
+	width:25%;
+	border:1px solid #ddd;
+	padding-top:5px;
+	float:left;
+	margin-right:8%;
+	text-align:center;
+	margin-bottom:20px;
+	height:200px;
+	border-radius: 5px;
+	color:#666;
+}
+.report_size{
+	height:20px;
+	line-height:20px;
+}
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+.on{
+	background:#fab617;
+}
+
+

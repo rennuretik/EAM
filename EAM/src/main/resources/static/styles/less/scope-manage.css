@@ -1,0 +1,585 @@
+.scope-manage {
+  /*content left*/
+  /*
+  clear child float (pika-lendar), using the famous micro clearfix hack
+  http://nicolasgallagher.com/micro-clearfix-hack/
+  */
+  /*.shousuo_arrow{
+    width: 12px;
+    height: 64px;
+    background: #fff;
+   margin-left:-3px;
+    margin-right:10px;
+    display:inline-block;
+   !* margin-top:190px;
+    position:relative;*!
+    position: absolute;
+    top: 190px;
+    left: 198px;
+  }*/
+  /*����ģ��*/
+  /*�༭ģ��*/
+}
+.scope-manage .left_btn {
+  float: right;
+  height: 80px;
+  margin: 26px 40px 0 0;
+}
+.scope-manage .left_btn p {
+  color: #fff;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 8px;
+}
+.scope-manage .left_btn input {
+  width: 90px;
+  height: 26px;
+  background: #7bdad5;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  color: #fff;
+  margin-left: 10px;
+}
+.scope-manage .content {
+  padding: 20px 10px 10px 10px;
+}
+.scope-manage .query-1-tit p {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  color: #81848b;
+}
+.scope-manage .content .content2 {
+  float: left;
+}
+.scope-manage .left_tree {
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+}
+.scope-manage .d_header {
+  background: #f6f7f8;
+  border: 1px solid #fff;
+  height: 57px;
+}
+.scope-manage .left_title {
+  font-size: 18px;
+  color: #81848b;
+  padding: 16px 0 0 20px;
+}
+.scope-manage .left_con {
+  margin-top: 14px;
+}
+.scope-manage .left_con li {
+  height: 32px;
+  padding-left: 20px;
+}
+.scope-manage .shousuo_arrow {
+  width: 3%;
+  min-width: 20px;
+}
+.scope-manage .right_arrow {
+  background: #fff url("../images/right1.png") no-repeat center;
+  height: 11px;
+  width: 7px;
+  display: inline-block;
+  margin: 26px 0 0 5px;
+  position: fixed;
+  top: 190px;
+  left: 7px;
+  padding: 36px 7px;
+  display: none;
+}
+.scope-manage .left_arrow {
+  background: #fff url("../images/left.png") no-repeat left center;
+  height: 11px;
+  width: 7px;
+  padding: 36px 7px;
+  display: inline-block;
+  margin: 11px 0 0 5px;
+  position: fixed;
+  top: 307px;
+  left: 205px;
+}
+.scope-manage .right_table {
+  /*width: 74%;*/
+}
+.scope-manage .right_table2 {
+  width: 96%;
+}
+.scope-manage .views-content {
+  width: 100%;
+  padding-left: 220px;
+  background: none;
+}
+.scope-manage .query-operation {
+  background: #f6f7f9;
+  border: 1px solid #fff;
+  padding: 18px 0 15px 30px;
+  z-index: 1;
+}
+.scope-manage .query-operation input {
+  height: 24px;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
+  margin-right: 6px;
+  border: none;
+}
+.scope-manage .query-operation .operate-btn1 {
+  background: #44afcf;
+}
+.scope-manage .query-operation .operate-btn2 {
+  background: #49d3c6;
+}
+.scope-manage .query-operation .operate-btn3 {
+  display: none;
+  background: #7177c9;
+}
+.scope-manage .menu_table {
+  background: #fff;
+  padding: 0 30px;
+  min-height: 460px;
+  position: relative;
+  overflow: auto;
+}
+.scope-manage .menu_table .choose {
+  border-bottom: 1px solid #edf0f5;
+  width: 5%;
+}
+.scope-manage .menu_table .choose_all {
+  border-bottom: 1px solid #edf0f5;
+  width: 5%;
+}
+.scope-manage .menu_table_th {
+  font-size: 14px;
+  color: #b0b3b9;
+  font-weight: normal;
+  height: 40px;
+  border-bottom: 1px solid #edf0f5;
+  text-align: left;
+}
+.scope-manage .menu_table .choose {
+  border-bottom: 1px solid #edf0f5;
+  width: 5%;
+  text-align: left;
+}
+.scope-manage .menu_table table {
+  width: 100%;
+}
+.scope-manage .menu_table .choose_all {
+  border-bottom: 1px solid #edf0f5;
+  width: 5%;
+  text-align: left;
+}
+.scope-manage .menu_table .type {
+  width: 25%;
+}
+.scope-manage .menu_table .control_type {
+  width: 15%;
+}
+.scope-manage .menu_table .scope_icon {
+  width: 18%;
+}
+.scope-manage .menu_table .scope_express {
+  width: 20%;
+}
+.scope-manage .menu_table .operate {
+  width: 18%;
+}
+.scope-manage .menu_table .choose_all a {
+  background: url("../images/checkbox.png") no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+.scope-manage .menu_table td {
+  font-size: 14px;
+  color: #81848b;
+  height: 40px;
+  border-bottom: 1px solid #edf0f5;
+}
+.scope-manage .menu_table .operate {
+  height: 40px;
+}
+.scope-manage .menu_table td a {
+  color: #44afd1;
+  padding-right: 8px;
+}
+.scope-manage .jump-con {
+  margin: 20px 0;
+  padding: 0 30px 20px 30px;
+}
+.scope-manage .jump-con ul {
+  height: 24px;
+  line-height: 24px;
+}
+.scope-manage .jump-con ul li {
+  margin-right: 12px;
+}
+.scope-manage .jump-con ul li span {
+  color: #83838d;
+}
+.scope-manage .jump-con ul .jp-left {
+  background: url("../images/jump01.png") no-repeat;
+  width: 9px;
+  height: 12px;
+  display: inline-block;
+}
+.scope-manage .jump-con ul .jp-left1 {
+  background: url("../images/jump02.png") no-repeat;
+  width: 6px;
+  height: 12px;
+  display: inline-block;
+}
+.scope-manage .menu-name {
+  background: url("../images/jump05.png") right 20px center no-repeat;
+}
+.scope-manage .text-name {
+  margin-top: -7px;
+}
+.scope-manage .text-block {
+  margin-top: -7px;
+}
+.scope-manage .text-icon {
+  margin-top: -7px;
+}
+.scope-manage .text-name-update {
+  margin-top: -7px;
+}
+.scope-manage .text-block-update {
+  margin-top: -7px;
+}
+.scope-manage .text-icon-update {
+  margin-top: -7px;
+}
+.scope-manage .select-text {
+  margin-left: 25px;
+}
+.scope-manage .jump-con ul .select-option {
+  display: none;
+  background: #fff;
+  border: 1px solid #edf0f5;
+  position: absolute;
+  top: 21px;
+  left: 0;
+  cursor: pointer;
+  width: 88px;
+}
+.scope-manage .jump-con ul .int03 {
+  width: 88px;
+  height: 22px;
+  text-indent: 5px;
+  cursor: pointer;
+  color: #83838d;
+}
+.scope-manage .jump-con .tishi {
+  color: #b2b3b7;
+}
+.scope-manage .select-option p {
+  height: 30px;
+}
+.scope-manage .select-option2 p {
+  height: 30px;
+}
+.scope-manage .select-option3 p {
+  height: 30px;
+}
+.scope-manage .select-option4 p {
+  height: 30px;
+}
+.scope-manage .select-option5 p {
+  height: 30px;
+}
+.scope-manage .select-option6 p {
+  height: 30px;
+}
+.scope-manage .win_warp .win_add {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -40px;
+  bottom: 0;
+  width: 660px;
+  height: 610px;
+  margin: auto;
+  padding: 36px 54px;
+}
+.scope-manage .win_warp .win_con_cus-shift .wid_tit .wid_con_tit {
+  font-size: 18px;
+  color: #81848b;
+  height: 44px;
+}
+.scope-manage .win_warp .win_con_cus-shift .wid_tit .wid_con_tit a {
+  background: url("../images/guanbi.png") no-repeat;
+  width: 13px;
+  height: 13px;
+  float: right;
+}
+.scope-manage .win_con_cus-shift .wid_con_warn div {
+  float: left;
+}
+.scope-manage .win_warp .win_con_cus-add {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -40px;
+  bottom: 0;
+  width: 660px;
+  height: 610px;
+  margin: auto;
+  padding: 36px 54px;
+}
+.scope-manage .win_warp .win_con_cus-add .wid_tit .wid_con_tit {
+  font-size: 18px;
+  color: #81848b;
+  height: 44px;
+}
+.scope-manage .win_warp .win_con_cus-add .wid_tit .wid_con_tit a {
+  background: url("../images/guanbi.png") no-repeat;
+  width: 13px;
+  height: 13px;
+  float: right;
+}
+.scope-manage .win_con_cus-add .wid_con_warn div {
+  float: left;
+}
+.scope-manage .win_warp {
+  width: 100%;
+  height: 100%;
+}
+.scope-manage .win_warp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  /*display: none;*/
+}
+.scope-manage .win_warp .wid {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -70px;
+  bottom: 0;
+  margin: auto;
+  padding: 36px 54px;
+}
+.scope-manage .win_warp .scope_add {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  width: 700px;
+  height: 400px;
+  margin: auto;
+}
+.scope-manage .report {
+  width: 850px;
+  height: 530px;
+}
+.scope-manage .wid_con_function_manage .wid_tit {
+  padding: 24px 20px 0 20px;
+}
+.scope-manage .wid_con_function_manage .wid_con_text .d_header input {
+  width: 250px;
+}
+.scope-manage .win_warp .win_con_cus-del {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -70px;
+  bottom: 0;
+  width: 420px;
+  height: 180px;
+  margin: auto;
+  padding: 36px 54px;
+}
+.scope-manage .wid_tit .wid_con_tit {
+  font-size: 18px;
+  color: #81848b;
+  height: 44px;
+}
+.scope-manage .wid_tit .wid_con_tit a {
+  background: url("../images/guanbi.png") no-repeat;
+  width: 13px;
+  height: 13px;
+  float: right;
+}
+.scope-manage .wid_con_warn div {
+  float: left;
+  margin: 10px 0;
+}
+.scope-manage .wid_con_warn .warn_icon {
+  background: url("../images/warn.png") no-repeat;
+  width: 37px;
+  height: 35px;
+  display: inline-block;
+}
+.scope-manage .wid_con_warn .del_icon {
+  background: url("../images/del.png") no-repeat;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.scope-manage .wid_con_warn .warn_text {
+  font-size: 16px;
+  color: #81848b;
+  height: 37px;
+  line-height: 37px;
+  margin-left: 20px;
+}
+.scope-manage .wid_btn {
+  clear: both;
+  text-align: center;
+}
+.scope-manage .wid_btn input {
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-top: 26px;
+  height: 40px;
+}
+.scope-manage .wid_btn1 {
+  background: #53d7dc;
+  letter-spacing: 20px;
+  padding: 0 30px 0 50px;
+}
+.scope-manage .wid_btn2 {
+  background: #b0b3b9;
+  margin-left: 18px;
+  letter-spacing: 20px;
+  padding: 0 30px 0 50px;
+}
+.scope-manage .wid_btn1:hover {
+  background: #5ce9ee;
+}
+.scope-manage .wid_btn2:hover {
+  background: #c1c5cb;
+}
+.scope-manage .sure_btn {
+  letter-spacing: 20px;
+  padding-left: 20px;
+}
+.scope-manage .wid .del_warn {
+  height: 160px;
+  width: 400px;
+}
+.scope-manage .last {
+  float: left;
+}
+.scope-manage .wid_con_text .input_box input {
+  height: 38px;
+  width: 470px;
+  line-height: 38px;
+  background: #F6F6F6;
+  border: 1px solid #e4e5ec;
+  text-indent: 10px;
+  color: #81848b;
+  vertical-align: middle;
+}
+.scope-manage .wid_con_text .input_box textarea {
+  height: 78px;
+  width: 370px;
+  background: #F6F6F6;
+  border: 1px solid #e4e5ec;
+  text-indent: 10px;
+  color: #81848b;
+  resize: none;
+}
+.scope-manage .input_text {
+  width: 100px;
+  line-height: 38px;
+  color: #81848b;
+  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 20px;
+  vertical-align: top;
+  font-weight: normal;
+}
+.scope-manage .drop input {
+  background: url("../images/drop-down.png") right 15px center no-repeat #f6f6f6;
+}
+.scope-manage i {
+  color: #e9593e;
+  font-size: 14px;
+  margin-right: 4px;
+  font-style: normal;
+}
+.scope-manage .add_btn {
+  background: #f6c028;
+  height: 40px;
+  width: 80px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  float: right;
+  margin-left: 20px;
+}
+.scope-manage .add_btn:hover {
+  background: #f4c646;
+}
+.scope-manage .select_box {
+  background: #f6f6f6;
+  border: 1px solid #e4e5ec;
+  color: #83838d;
+  cursor: pointer;
+  position: absolute;
+  width: 470px;
+  margin-left: 120px;
+  clear: both;
+  display: none;
+}
+.scope-manage .select_box li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.scope-manage .select_box li:hover {
+  background: #8a8dd2;
+  color: #fff;
+}
+.scope-manage .report_win {
+  display: none;
+}
+.scope-manage .select_con {
+  display: none;
+  clear: left;
+}
+.scope-manage .prompt {
+  background: url("../images/prompted.png") no-repeat;
+  width: 126px;
+  height: 106px;
+  margin: 20px auto;
+  clear: both;
+}
+.scope-manage .type_sel {
+  display: none;
+}
+.scope-manage .views-nav {
+  position: fixed;
+  width: 200px !important;
+  background: #fff;
+  left: 10px;
+  top: 100px;
+  bottom: 10px;
+  width: 200px;
+  z-index: 1;
+}

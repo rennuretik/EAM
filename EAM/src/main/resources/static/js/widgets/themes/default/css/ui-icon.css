@@ -1,0 +1,129 @@
+/*
+ *图标样式大小16*16
+ *主样式
+ */
+.button-btn-icon{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+	background-image:url("../icons/ui-icons.png");
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.ui-icon{
+	background:url("../icons/ui-icons-1.png") no-repeat;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+
+.icon-edit {
+	background-position:-80px 0;
+}
+.icon-add {
+	background-position:-353px 0;
+}
+.icon-save {
+	background-position:-304px 0;
+}
+.icon-search {
+	background-position:-96px 0;
+}
+.icon-ok {
+	bbackground-position:0 0
+}
+.icon-no {
+	background-position:-32px 0;
+}
+.icon-print {
+	background-position:-144px 0;
+}
+.icon-redo {
+	background-position:-160px 0;
+}
+.icon-reload {
+	background-position:-128px 0;
+}
+.icon-undo {
+	background-position:-112px 0;
+}
+.icon-cancel {
+	background-position:-256px 0;
+}
+.icon-cut {
+	background-position:-336px 0;
+}
+.icon-help {
+	background-position:-176px 0;
+}
+.icon-remove {
+	background-position:-320px 0;
+}
+.icon-add16{
+	background-position:-240px 0;
+}
+.icon-tree-expand{
+	background-position:-288px 0;
+}
+.icon-tree-collpose{
+	background-position:-208px 0;
+}
+/*
+ *关闭图标
+ */
+.ui-icon-close{
+	background-position: -256px 0;
+}
+/*
+ *收缩图标
+ */
+.ui-icon-collapse{
+	background-position: -288px 0;
+}
+
+/*
+ *checkbox未选中图标
+ */
+.ui-icon-cb-unchecked{
+	background-position:-192px 0;
+}
+/*
+ *checkbox选中图标
+ */
+.ui-icon-cb-checked{
+	background-position:-224px 0;
+}
+.icon-sort-asc{
+	background-position:-48px 0;
+}
+.icon-sort-desc{
+	background-position:-64px 0;
+}
+.icon-columns{
+	background-position:-272px 0;
+}
+.ui-icon-split-top{
+	background: url('../images/images.png') no-repeat -105px -164px;
+	height:5px;
+	width:35px;
+}
+.ui-icon-split-bottom{
+	background: url('../images/images.png') no-repeat 0 -164px;
+	height:5px;
+	width:35px;
+}
+.ui-icon-split-left{
+	background: url('../images/images.png') no-repeat -70px -164px;
+	height:35px;
+	width:5px;
+}
+.ui-icon-split-right{
+	background: url('../images/images.png') no-repeat -35px -164px;
+	height:35px;
+	width:5px;
+}
+.ui-icon-collapse{
+	background:url("../icons/ui-icons-1.png") no-repeat -96px -191px
+}

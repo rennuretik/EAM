@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>教师管理视图</title>
+    #set($breadcrumb="<li>教师管理视图</li><li>教师管理</li>")
+    #parse("common/top-share-code.vm")
+    <link rel="stylesheet" href="${rc.contextPath}/libs/font-welkin/css/iconfont.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet"
+          href="${rc.contextPath}/libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/bootstrap-select/1.12.1/css/bootstrap-select.css"/>
+    <link rel="stylesheet" href="${rc.contextPath}/libs/animate/animate.min.css">
+    <link rel="stylesheet" href="${rc.contextPath}/src/styles/app.css">
+    <link rel="stylesheet" href="${rc.contextPath}/libs/stree/ui-tree.css">
+    <link rel="stylesheet" href="${rc.contextPath}/js/widgets/themes/default/css/ui-tree.css">
+    <link type="text/css" href="${rc.contextPath}/styles/menu-manager.css" rel="stylesheet"/>
+</head>
+<body>
+    #parse("common/page-header-nav.vm")
+<div class="crm-body">
+    <div class="query-1-tit">
+    #* <p class="tit-q1">菜单管理:</p>*#
+    </div>
+    <div class="absolute-container">
+        <div class="client-views">
+            <div class="views-nav">
+                <div class="left_tree content2" id="lt">
+                    <div class="d_header">
+                        <input type="text" value="请输入关键字" class="tree_search" id="search-menu"
+                               onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
+                               onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999"/>
+
+                        <div class="d_icon">
+                            <a href="#" class="d_icon1 d_search"></a>
+                            <a href="#" class="d_icon2 d_spread"><span></span></a>
+                            <a href="#" class="d_icon2 d_combine"><span></span></a>
+                        </div>
+                    </div>
+                    <div class="tree_content clearfix tree_box">
+                        <input id="menuId" name="menuId" type="hidden">
+                        <input id="menuName" name="menuName" type="hidden">
+
+                        <div class="tree_content clearfix">
+                            <!--左侧菜单树-->
+                            <ul id="menuTree" class="ztree clearfix"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="views-content">
+                <div class="right_table content2 " id="rm">
+                    <div class="query-operation">
+                        <input type="submit" value="新增教师" id="operate-btn1" class="operate-btn1"/>
+                        <input type="submit" value="批量删除" class="operate-btn2"/>
+                    </div>
+                    <div class="menu_table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="choose_all">
+                                    <input type="checkbox" class="menu_table-checkbox-all">
+                                </th>
+                                <th class="menu_table_th tId">教师编码</th>
+                                <th class="menu_table_th tName">姓名</th>
+                                <th class="menu_table_th tSex">性别</th>
+                                <th class="menu_table_th tAge">年龄</th>
+                                <th class="menu_table_th tDuty">职位</th>
+                                <th class="menu_table_th isLocal">是否本地</th>
+                                <th class="menu_table_th facuity">所属系</th>
+                                <th class="menu_table_th operate">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            <form id="data-query" action="/teacher/list" >
+                                #foreach($teacher in ${result[0]})
+                                    <tr>
+                                        <td class="choose">
+                                            <input type="checkbox" name="subBox" class="menu_table-checkbox">
+                                        </td>
+                                    ##                                        <td>$!{velocityCount}</td>
+                                        <td id="${teacher.tId}-tId" class="id">$!{teacher.tId}</td>
+                                        <td id="${teacher.tId}-tName">$!{teacher.tName}</td>
+                                        <td id="${teacher.tId}-tSex">$!{teacher.tSex}</td>
+                                        <td id="${teacher.tId}-tAge">$!{teacher.tAge}</td>
+                                        <td id="${teacher.tId}-tDuty">$!{teacher.tDuty}</td>
+                                        <td id="${teacher.tId}-isLocal">$!{teacher.isLocal}</td>
+                                        <td id="${teacher.tId}-facultyByFId">$!{teacher.facultyByFId.fName}</td>
+                                        <td>
+                                            <a href="javascript:teacherEdit('${teacher.tId}');">编辑</a>
+                                            <a href="javascript:teacherDelete('${teacher.tId}');">删除</a>
+                                        </td>
+                                    </tr>
+                                #end
+                            </tbody>
+                            </form>
+                        </table>
+                    ##                        <!--分页栏-->
+                    ##                        #page($!{result.getPageTools()}"/vdfp/form_manager")
+                    </div>
+
+                </div>
+            </div>
+            <!--删除教师弹出框-->
+            <div id="form-delete" class="modal-modify modal-planadd" style="display: none;">
+                <div class="modal-body">
+                    <label class="control-label .col-xs-12">确定删除该教师？</label>
+                </div>
+            </div>
+            <!--收缩箭头-->
+            <div class="shousuo_arrow content2 " id="sy">
+                <a class="left_arrow" id="lre"><span></span></a>
+                <a class="right_arrow" id="lre"><span></span></a>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--修改和新增弹出框内容-->
+<div id="modal-edit" class="modal-modify modal-planadd" style="display: none;">
+    <div class="modal-body">
+        <form id="form-edit" class="form-horizontal" action="">
+            <input type="text" name="tId" class="hide" value="">
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">姓名：</label>
+
+                <div class="col-sm-18">
+                    <input type="text" id="tName" name="tName" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">性别：</label>
+                <div class="col-sm-18">
+                    <select name="tSex" class="form-control">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">年龄：</label>
+
+                <div class="col-sm-18">
+                    <input type="text" id="tAge" name="tAge" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">职位：</label>
+                <div class="col-sm-18">
+                    <select name="tDuty" class="form-control">
+                        <option value="教员">教员</option>
+                        <option value="教授">教授</option>
+                        <option value="副教授">副教授</option>
+                        <option value="研究生">研究生</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">是否当地：</label>
+                <div class="col-sm-18">
+                    <select name="isLocal" class="form-control">
+                        <option value="0">否</option>
+                        <option value="1">是</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="">所属系：</label>
+                <div class="col-sm-18">
+                    <select name="facultyByFId" class="form-control">
+                        #foreach($faculty in ${result[1]})
+                            <option value="${faculty.fId}">$!{faculty.fName}</option>
+                        #end
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<input type="hidden" id="contextPath" value="${rc.contextPath}">
+<input id="baseUri" type="hidden" value="${rc.contextPath}/plugin/${pluginName}/${pluginVersion}"/>
+    #parse("common/bottom-share-code.vm")
+<script src="${rc.contextPath}/libs/layer/layer.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+<script src="${rc.contextPath}/libs/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="${rc.contextPath}/libs/stree/ztree.js"></script>
+<script src="${rc.contextPath}/libs/stree/stree.js"></script>
+<script src="${rc.contextPath}/src/js/teacher_manager.js"></script>
+</body>
+</html>
+
+
+
